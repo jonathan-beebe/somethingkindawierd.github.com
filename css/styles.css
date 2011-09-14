@@ -72,6 +72,11 @@ ol ol {
 	margin: 0 0 0 1em;
 }
 
+ul li, ol li {
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
 
 body {
 	font: 16px/24px Helvetica, sans-serif;
@@ -216,6 +221,8 @@ h1 a, h1 a:active, h1 a:hover { color: rgb(60,60,60); }
 	font-size: 12px;
 	line-height: 1.5em;
 }
+#right .content li > code,
+#right .content p > code { display: inline; }
 
 #right .content .img {
 	border: 1px solid #ccc;
@@ -255,7 +262,7 @@ h1 a, h1 a:active, h1 a:hover { color: rgb(60,60,60); }
 #left .nav li a,
 #left .nav li a:active,
 #left .nav li a:hover {
-    color: rgb(60,60,60);
+		color: rgb(60,60,60);
 }
 
 #left .nav li.heading {
@@ -265,7 +272,7 @@ h1 a, h1 a:active, h1 a:hover { color: rgb(60,60,60); }
 	margin-bottom: 1em;
 }
 #left .nav li.heading a {
-    color: #aaa;
+		color: #aaa;
 }
 
 #left .nav li .arrow-left {
