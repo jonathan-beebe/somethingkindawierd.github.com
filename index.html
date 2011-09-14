@@ -1,1 +1,14 @@
-<h1>Somethingkindawierd</h1>
+---
+layout: default
+title: Home
+---
+  <!--
+	  this list is formatted same as .nav, with each p having unique text formatting.
+	  this enables the summary list to line-up with the nav list.
+  -->
+  <ul class="summary">
+    {% for post in site.posts %}
+    <li><p>{% if post.summary %}{{ post.summary }}{% else %}{{ post.title }}{% endif %}</p></li>
+    {% endfor %}
+  </ul>
+

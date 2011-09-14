@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>{{ page.title }}</title>
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" media="all" href="/css/styles.css"/>
+		<link rel="stylesheet" media="all" href="/css/code.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+
+	</head>
+
+	<body lang="en">
+		<div id="me">
+			<h1 title="Most everyone calls me Jon, except my family&hellip;they still call be Jonathan"><a href="/index.html">Jon(athan) Beebe</a></h1>
+			<div>somethingkindawierd@gmail.com</div>
+			<div>
+				<a href="http://www.somethingkindawierd.com/">blog</a> &bull;
+				<a href="/jon-beebe-resume.html">resume</a> &bull;
+				<a href="http://www.beebeography.com">photography</a> &bull;
+				<a href="https://github.com/somethingkindawierd">github</a> &bull;
+				<a href="http://twitter.com/bejonbee">twitter</a></div>
+		</div>
+
+		<div id="main">
+
+			<div id="left">
+        {% include sidebar.partial.html %}
+			</div>
+			<div id="right">
+			  <div class="content {% if page.title == 'Home' %}summary{% endif %}">
+				{{ content }}
+        <div class="corner top-left"></div>
+        <div class="corner top-right"></div>
+        <div class="corner bottom-right"></div>
+        <div class="corner bottom-left"></div>
+
+				</div>
+			</div>
+
+		</div>
+		<div class="clear-both"></div>
+	</body>
+
+</html>
+

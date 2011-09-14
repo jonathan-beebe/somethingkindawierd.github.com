@@ -1,0 +1,7 @@
+auto: true
+permalink: /projects/:title
+pygments: true
+exclude:
+- README.md
+- Rakefile
+

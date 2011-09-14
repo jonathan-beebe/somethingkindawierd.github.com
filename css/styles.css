@@ -1,0 +1,365 @@
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup,
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+a, a:active, a:hover { text-decoration: none; }
+
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.huge, h1 {
+	font-size: 42px;
+	line-height: 48px;
+}
+
+.large, h2 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.bigger, h3 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+p, ul, ol {
+	margin: 1em 0;
+}
+
+li p { margin: 0; }
+
+ul, ol {
+	list-style-position: inside;
+}
+
+ul ul {
+	margin: 0 0 0 1em;
+}
+
+ol ol {
+	margin: 0 0 0 1em;
+}
+
+
+body {
+	font: 16px/24px Helvetica, sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	text-shadow: 0 1px 0 white;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.active {
+	font-weight: bold;
+}
+
+code {
+	white-space: pre;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection			{background: rgb(255,255,158);}
+::-moz-selection	{background: rgb(255,255,158);}
+img::selection		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+/* Other global styles */
+
+.arrow-up {
+	width: 0; height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid white;
+}
+
+.arrow-down {
+	width: 0; height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid white;
+}
+
+.arrow-right {
+	width: 0; height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid white;
+}
+
+.arrow-left {
+	width: 0;	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right:10px solid white;
+}
+
+.clear-both { clear: both; }
+
+/*		Default Layout: 992px.
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols		1			2			 3			4			 5			6			 7			8			 9			10
+px			68		160		 252		344		 436		528		 620		712		 804		896		 */
+
+body {
+	width: 896px;
+	padding: 32px 48px 84px;
+	background: rgb(232,232,232);
+	color: rgb(60,60,60);
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+	margin: 0 auto;
+}
+a, a:active { color: rgb(90,90,150); }
+a:hover { color: rgb(120,120,200); }
+h1 a, h1 a:active, h1 a:hover { color: rgb(60,60,60); }
+
+#me {
+	text-align: center;
+	margin-bottom: 25px;
+	width: 696px;
+	margin-left: 200px;
+}
+
+#main {
+
+}
+
+#right {
+	float: right;
+	width: 696px;
+	background: white;
+	position: relative;
+}
+#right .content {
+	margin: 25px;
+}
+#right .corner {
+	border-color:  white;
+	border-style: solid;
+	border-width: 10px;
+	width: 0;
+	height: 0;
+	position: absolute;
+}
+
+/* Corners are positioned like this:
+
+		1
+	4		2
+		3
+
+	border-color: 1 2 3 4;
+
+*/
+
+#right .corner.top-left {
+	border-color: rgb(232,232,232) white white rgb(232,232,232);
+	top: 0; left: 0;
+}
+#right .corner.top-right {
+	border-color: rgb(232,232,232) rgb(232,232,232) white white ;
+	top: 0; right: 0;
+}
+#right .corner.bottom-right {
+	border-color: white rgb(232,232,232) rgb(232,232,232) white;
+	bottom: 0; right: 0;
+}
+#right .corner.bottom-left {
+	border-color: white white rgb(232,232,232) rgb(232,232,232);
+	bottom: 0; left: 0;
+}
+
+#right .content code {
+	overflow-y: auto;
+	display: block;
+	padding: 5px;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+#right .content .img {
+	border: 1px solid #ccc;
+	background: #fafafa;
+	padding: 10px;
+}
+.img { margin: 5px 0; }
+.img.full img {
+	width: 624px;
+}
+.img.half { float: left; margin-right: 10px; }
+.img.half.right { margin-right: 0; }
+.img.half img {
+	width: 296px;
+}
+
+#left {
+	float: left;
+	width: 200px;
+}
+
+#left ul.nav {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1em;
+	text-indent: -1em;
+	position: relative;
+	margin-top: 3em;
+}
+
+#left .nav li {
+	text-align: right;
+	padding: 0 15px 0 0;
+	position: relative;
+	margin: 0.5em 0;
+}
+#left .nav li a,
+#left .nav li a:active,
+#left .nav li a:hover {
+    color: rgb(60,60,60);
+}
+
+#left .nav li.heading {
+	font-size: 1.3em;
+	font-weight: 700;
+	color: #aaa;
+	margin-bottom: 1em;
+}
+#left .nav li.heading a {
+    color: #aaa;
+}
+
+#left .nav li .arrow-left {
+	position: absolute;
+	right: 0;
+	top: 3px;
+}
+
+#right .summary {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+#right .summary ul {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1em;
+	padding-right: 1em;
+	position: relative;
+	margin-top: 3.5em;
+	margin-bottom: 3.5em;
+}
+
+#right .summary li {
+	height: 2em;
+}
+
+#right .summary li.heading {
+	margin-bottom: 1em;
+	font-size: 1.3em;
+	height: 1em;
+}
+
+#right .summary li p {
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	line-height: 1em;
+}
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols		1			2			 3			4			 5			6			 7			8
+px			68		160		 252		344		 436		528		 620		712		 */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	body {
+		width: 712px;
+		padding: 48px 28px 60px;
+	}
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols		1			2			 3
+px			68		160		 252		*/
+
+@media only screen and (max-width: 767px) {
+
+	body {
+		width: 252px;
+		padding: 48px 34px 60px;
+	}
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols		1			2			 3			4			 5
+px			68		160		 252		344		 436		*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	body {
+		width: 436px;
+		padding: 36px 22px 48px;
+	}
+
+}
+
