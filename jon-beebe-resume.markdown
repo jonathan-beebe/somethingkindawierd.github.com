@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Jon Beebe's Resume
+title: Jon Beebe's Résumé
 ---
 You can probaably tell this site is a work in progress...
 
