@@ -1,22 +1,22 @@
 				<ul class="nav">
           {% for post in site.posts %}
 				    {% assign class = 'default' %}
-				    {% assign arrow = '' %}
+				    {% assign arrow = ' ' %}
 				    {% if page.url == post.url %}
 				      {% assign class = 'active' %}
-				      {% assign arrow = '<div class="arrow-left"></div>' %}
+				      {% assign arrow = 'arrow-left' %}
 				    {% endif %}
             <li class="{{ class }}">
-              <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>{{ arrow }}
+              <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><div class="{{ arrow }}"></div>
             </li>
           {% endfor %}
 
 			    {% assign class = 'default' %}
-			    {% assign arrow = '' %}
+			    {% assign arrow = ' ' %}
 			    {% if page.url == '/jon-beebe-resume.html' %}
 			      {% assign class = 'active' %}
-			      {% assign arrow = '<div class="arrow-left"></div>' %}
+			      {% assign arrow = 'arrow-left' %}
 			    {% endif %}
-          <li class="{{ class }}"><a href="/jon-beebe-resume.html">Resume</a>{{ arrow }}</li>
+          <li class="{{ class }}"><a href="/jon-beebe-resume.html">Resume</a><div class="{{ arrow }}"></div></li>
 				</ul>
 
