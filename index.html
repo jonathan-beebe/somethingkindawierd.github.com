@@ -8,7 +8,10 @@ title: Home
   -->
   <ul class="summary">
     {% for post in site.posts %}
+    {% if post.tags contains 'test' %}
+    {% else %}
     <li><p>{% if post.summary %}{{ post.summary }}{% else %}{{ post.title }}{% endif %}</p></li>
+    {% endif %}
     {% endfor %}
   </ul>
 
