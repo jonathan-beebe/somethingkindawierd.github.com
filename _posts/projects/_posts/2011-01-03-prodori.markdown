@@ -23,7 +23,7 @@ My contributions include:
 
 *	Contributing to the core framework.
 *	Integrating Prodori's shopping cart into the existing inventory systems.
-*	Implementing backend tools for customer service and sales staff to maintain the site and it's resources.
+*	Implementing backend tools for customer service and sales staff to maintain the site and its resources.
 *	Implementing much of the front-end, such as integrating existing jQuery plugins &amp; writing javascript to power the interface.
 
 A notable exception to the use of homegrown solutions is in the use of javascript. One of the original goals was to provide a very fluid, 

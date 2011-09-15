@@ -34,7 +34,7 @@ child.graphics.endFill();
 
 Here is a screenshot of the `Graphics_Test.html` running as of 2011, September 14. 
 The code above is responsible for drawing the 3 rectangles you see below.
-I know the shapes are not very interesting, but I find it fascinating that javascript is drawing to the canvas suing the as3 api :)
+I know the shapes are not very interesting, but I find it fascinating that javascript is drawing to the canvas using the as3 api :)
 
 <div class="img full">
 <img src="/images/projects/as3-js/display-object-test.png" />
