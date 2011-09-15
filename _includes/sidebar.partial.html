@@ -1,22 +1,25 @@
-				<ul class="nav">
-          {% for post in site.posts %}
-				    {% assign class = 'default' %}
-				    {% assign arrow = ' ' %}
-				    {% if page.url == post.url %}
-				      {% assign class = 'active' %}
-				      {% assign arrow = 'arrow-left' %}
-				    {% endif %}
-            <li class="{{ class }}">
-              <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><div class="{{ arrow }}"></div>
-            </li>
-          {% endfor %}
+		<ul class="nav">
+		  {% for post in site.posts %}
+		  	{% if post.tags contains 'test' %}
+			{% else %}
+					{% assign class = 'default' %}
+					{% assign arrow = ' ' %}
+					{% if page.url == post.url %}
+					  {% assign class = 'active' %}
+					  {% assign arrow = 'arrow-left' %}
+					{% endif %}
+			<li class="{{ class }}">
+			  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><div class="{{ arrow }}"></div>
+			</li>
+			{% endif %}
+		  {% endfor %}
 
-			    {% assign class = 'default' %}
-			    {% assign arrow = ' ' %}
-			    {% if page.url == '/jon-beebe-resume.html' %}
-			      {% assign class = 'active' %}
-			      {% assign arrow = 'arrow-left' %}
-			    {% endif %}
-          <li class="{{ class }}"><a href="/jon-beebe-resume.html">Résumé</a><div class="{{ arrow }}"></div></li>
-				</ul>
+				{% assign class = 'default' %}
+				{% assign arrow = ' ' %}
+				{% if page.url == '/jon-beebe-resume.html' %}
+				  {% assign class = 'active' %}
+				  {% assign arrow = 'arrow-left' %}
+				{% endif %}
+		  <li class="{{ class }}"><a href="/jon-beebe-resume.html">Résumé</a><div class="{{ arrow }}"></div></li>
+		</ul>
 

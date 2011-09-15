@@ -1,19 +1,8 @@
 ---
 layout: project
-title: Prodori
-category: project
-summary: An elegant site suited for the high-end jewelry market.
+title: Test Styles
 tags: test
 ---
-Prodori
-=======
-
-Prodori is an elegant site designed to compete in the jewelry market.
-
-<div class="img full">
-<img src="/images/projects/prodori/front.jpg" />
-</div>
-
 Heading 1
 =========
 

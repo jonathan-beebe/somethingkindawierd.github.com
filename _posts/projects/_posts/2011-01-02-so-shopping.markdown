@@ -3,6 +3,7 @@ layout: project
 title: So Shopping
 category: project
 summary: An ecommerce site with an integrated game-layer.
+tags: test
 ---
 Heading 1
 =========
@@ -28,8 +29,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at erat non purus
 Object.implement({
 
   toString: function(target) {
-    target = target || this;
-    return JSON.encode(this);
+	target = target || this;
+	return JSON.encode(this);
   }
 
 });
@@ -56,23 +57,23 @@ Aenean sem lectus, dapibus et gravida ut, interdum ut nunc. Nunc ornare sollicit
 <img src="/images/half_04.jpg" />
 </div>
 
-*   List
-*   Items in List
-*   More and More
-*   Stuff
-    *   Here's the nested stuff.
-    *   Nested list
-    *   More nested
-    *   How's it look?
-*   More
+*	List
+*	Items in List
+*	More and More
+*	Stuff
+	*	Here's the nested stuff.
+	*	Nested list
+	*	More nested
+	*	How's it look?
+*	More
 
-1.   Numbered List
-1.   Items in List
-1.   More and More
-1.   Stuff
-    1.   Nested List?
-    1.   Nested Numbered list
-    1.   One
-    1.   Five
-1.   More
+1.	 Numbered List
+1.	 Items in List
+1.	 More and More
+1.	 Stuff
+	1.	 Nested List?
+	1.	 Nested Numbered list
+	1.	 One
+	1.	 Five
+1.	 More
 
