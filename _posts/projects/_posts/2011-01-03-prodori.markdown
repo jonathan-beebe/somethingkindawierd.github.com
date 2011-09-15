@@ -14,75 +14,28 @@ Prodori is an elegant site designed to compete in the jewelry market.
 <img src="/images/projects/prodori/front.jpg" />
 </div>
 
-Heading 1
-=========
+About the Project
+-----------------
 
-Heading 2
----------
+This company likes to use home-grown solutions. The entire Prodori site is built using a homegrown PHP5 MVC framework very similar to Yii.
 
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+My contributions include:
 
+*	Contributing to the core framework.
+*	Integrating Prodori's shopping cart into the existing inventory systems.
+*	Implementing backend tools for customer service and sales staff to maintain the site and it's resources.
+*	Implementing much of the front-end, such as integrating existing jQuery plugins &amp; writing javascript to power the interface.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at erat non purus euismod congue nec vitae erat. Nulla arcu neque, porttitor at condimentum non, faucibus et lacus. Nulla eget lorem libero. Donec mauris dui, aliquet sit amet egestas eu, porttitor et nunc. Pellentesque in nisl velit, ac adipiscing nisi. Proin vehicula, eros at viverra molestie, risus arcu molestie sapien, sed dapibus felis massa vitae nunc. Cras dignissim lectus at metus viverra id porttitor sapien feugiat. Sed hendrerit, magna vel sodales hendrerit, ipsum velit convallis purus, vitae gravida mi ligula id dolor. Donec vel ipsum a risus varius convallis. Mauris sit amet leo eu ligula malesuada mattis. Vestibulum eleifend, dui non elementum tincidunt, massa erat ultricies enim, vel tincidunt est ipsum in risus. Curabitur laoreet sapien vitae mauris rutrum ultrices.
+A notable exception to the use of homegrown solutions is in the use of javascript. One of the original goals was to provide a very fluid, 
+animated browsing experience without flash. We relied heavily on jQuery and its rich plugin ecosystem.
 
+### jQuery plugins used
 
-
-{% highlight javascript linenos %}
-// A basic to-string method to help us debug our objects.
-// using `console.log(obj)` with an object literal will not guarentee an
-// accurate representation of that object at that instant. Thus we render
-// it to a string to get an accurate snapshot.
-Object.implement({
-
-  toString: function(target) {
-	target = target || this;
-	return JSON.encode(this);
-  }
-
-});
-{% endhighlight %}
-
-<div class="img full">
-<img src="/images/full.jpg" />
-</div>
-
-
-Aenean sem lectus, dapibus et gravida ut, interdum ut nunc. Nunc ornare sollicitudin consectetur. In hac habitasse platea dictumst. Praesent consequat erat vitae nisl aliquet auctor. Suspendisse pharetra, tortor at luctus molestie, odio purus vulputate augue, eu pretium justo dui a justo. Pellentesque non lectus at erat mollis consequat quis nec nunc. Aenean fermentum volutpat pharetra. Maecenas ut risus sit amet neque faucibus malesuada. In elementum, justo quis posuere ullamcorper, libero velit hendrerit dui, at malesuada lacus tortor sed massa. Cras quis volutpat ante. Pellentesque et ante nunc, vitae feugiat arcu. Integer eget erat tortor. Praesent fringilla fringilla lobortis.
-
-
-<div class="img half left">
-<img src="/images/half_01.jpg" />
-</div>
-<div class="img half right">
-<img src="/images/half_02.jpg" />
-</div>
-<div class="img half left">
-<img src="/images/half_03.jpg" />
-</div>
-<div class="img half right">
-<img src="/images/half_04.jpg" />
-</div>
-
-*	List
-*	Items in List
-*	More and More
-*	Stuff
-	*	Here's the nested stuff.
-	*	Nested list
-	*	More nested
-	*	How's it look?
-*	More
-
-1.	 Numbered List
-1.	 Items in List
-1.	 More and More
-1.	 Stuff
-	1.	 Nested List?
-	1.	 Nested Numbered list
-	1.	 One
-	1.	 Five
-1.	 More
-
+*	[Brian Cherne's](http://cherne.net/) [hoverIntent](http://cherne.net/brian/resources/jquery.hoverIntent.html)
+*	[Mahdi PedramRazi's](http://mahdipedram.com/) niceZoom from the [jQueryToolkit](http://www.jQueryToolkit.com)
+*	[Kelvin Luck's](http://www.kelvinluck.com) [jScrollPane](http://jscrollpane.kelvinluck.com/)
+*	[Keith Wood's](http://keith-wood.name/) [jQuery Countdown](http://keith-wood.name/countdown.htm)
+*	[Brandon Aaron's](http://brandonaaron.net) [jQuery Mousewheel](http://brandonaaron.net/code/mousewheel/docs)
+*	[Ariel Flesler's](http://flesler.blogspot.com) [jQuery.ScrollTo](http://flesler.blogspot.com/2007/10/jqueryscrollto.html)
+*	[Jörn Zaefferer's](http://bassistance.de/about/) [jQuery Validation](http://bassistance.de/jquery-plugins/jquery-plugin-validation/)
+*	Joel Birch's [superfish](http://users.tpg.com.au/j_birch/plugins/superfish/)
