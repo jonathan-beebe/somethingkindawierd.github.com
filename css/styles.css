@@ -229,11 +229,17 @@ h1 a, h1 a:active, h1 a:hover { color: rgb(60,60,60); }
 	background: #fafafa;
 	padding: 10px;
 }
-.img { margin: 5px 0; }
+.img { 
+	margin: 5px 0; 
+	float: left;
+}
+.img.full {
+	margin-bottom: 1em;
+}
 .img.full img {
 	width: 624px;
 }
-.img.half { float: left; margin-right: 10px; }
+.img.half { margin-right: 10px; }
 .img.half.right { margin-right: 0; }
 .img.half img {
 	width: 296px;
