@@ -1,17 +1,73 @@
 ---
-layout: default
+layout: resume
 title: Jon Beebe's Résumé
 ---
-This site is a work-in-progress. I just pushed the 1st version live on 2011 September 13th. I'll post my resume content shortly&hellip;
+#### Objective
 
-*	Lorem ipsum dolor sit amet
-*	consectetuer adipiscing elit
-*	sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam
-*	quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat
-*	vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus
-*	qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica
-*	quam nunc putamus parum claram
-*	anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi
-*	qui nunc nobis videntur parum clari
-*	fiant sollemnes in futurum.
+To explore the unrealized potential of internet technology serving business and facilitating communication
+
+### Education
+
+#### 1998-2003
+BS in Industrial Technologies, California Polytechnic State University
+
+#### Summer of 1998
+
+Studied Art History and Fine Arts at Parson art school in Paris, France
+
+### Employment History
+
+#### March 2010 – Present
+
+##### Architect & Developer – Vortal Group
+
+Responsible for creating and maintaining object-oriented php + javascript applications. All projects created within a PHP5 MVC framework, making extensive use of jQuery/Ajax. Notable accomplishments include building a single unified PHP5 api facade/wrapper for Google AdWords, Microsoft AdCenter, and Yahoo EWS paid ad networks, and growing a biweekly email campaign & social internet infrastructure to organically increase traffic and conversions. Most recent project involves using PHP/MooTools + APE to create an interactive game-layer across ecommerce platforms, along with a PHP API for 3rd party vendors to access and interact with the game.
+
+#### Jan 2005 – Feb 2010
+
+##### Architect & Developer – Add Interactivity
+
+Roles included project manager, software engineer, and programmer. Responsible for initial consultation, design, and delivery of LAMP/AJAX web applications developed in a team environment. Key accomplishments include creating an AJAX driven cms system for small business websites.
+
+#### Oct 2003 – Feb 2010
+
+##### BIG Images – big-images.com
+
+Owner and founding partner of BIG Images, a large format print company. Responsibilities included color management of print workflow, automating production tasks (both hardware and software,) implementing and maintaining a web presence, including creation of LAMP web applications, marketing campaigns, keyword research, and SEO performance analysis. Key accomplishments included the Delicious Designer — an interactive Flash ActiontScript 3 app — allowing customers to design banners online, outputting optimized print-ready files.
+
+####Aug 2003 – Mar 2005
+
+##### Glow Empire
+
+Coordinated web applications, custom scripts, hardware, and production processes to automate selling and shipping of imported goods. Results included dramatically improved throughput and seamless logistics. Developed a turn-key automated workflow encompassing everything from posting online auctions at ebay.com to processing purchases and creating shipping labels.
+
+### Technical Skills
+
+#### Languages
+
+Javascript, PHP 4 & 5, MySQL, XHTML/HTML, CSS, ActionScript 2 & 3, AppleScript
+
+#### Javascript Libraries
+
+jQuery, MooTools, YUI
+
+#### Technologies
+
+AJAX, APE (Ajax Push Engine), MySQL
+
+#### Operating Systems
+
+Mac OS X, Linux (primarily Debian-based)
+
+#### Graphics Apps
+
+Photoshop, Illustrator, The GIMP, Inkscape, Flash
+
+#### Version Control
+
+git, svn
+
+### Strengths
+
+Highly creative, self-motivated and self-managed. Embrace team-environments. Talent for diagnosing problems and crafting solutions. Very organized, manifesting itself in well-commented, easy to follow code. Good communication skills, especially when communicating complex, technical subjects to non-technical people. Passion for open-source.
 

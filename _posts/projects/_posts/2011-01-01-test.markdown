@@ -54,6 +54,7 @@ Aenean sem lectus, dapibus et gravida ut, interdum ut nunc. Nunc ornare sollicit
 <div class="img half right">
 <img src="/images/half_04.jpg" />
 </div>
+<div class="clear-both"></div>
 
 *	List
 *	Items in List
