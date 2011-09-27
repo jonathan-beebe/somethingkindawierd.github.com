@@ -108,15 +108,15 @@ a, a:active, a:hover {
   letter-spacing: -1px;
 }
 .huge, h1 {
-  font-size: 42px;
+  font-size: 3em;
   line-height: 48px;
 }
 .large, h2 {
-  font-size: 26px;
+  font-size: 2em;
   line-height: 36px;
 }
 .bigger, h3 {
-  font-size: 22px;
+  font-size: 1.5em;
   line-height: 30px;
 }
 p, ul, ol {
@@ -410,20 +410,35 @@ px			68		160		 252		344		 436		528		 620		712		 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   body {
     width: 712px;
-    padding: 48px 28px 60px;
+    padding: 32px 28px 84px;
   }
-}
-/*		Mobile Layout: 320px.
-		Gutters: 24px.
-		Outer margins: 34px.
-		Inherits styles from: Default Layout.
----------------------------------------------
-cols		1			2			 3
-px			68		160		 252		*/
-@media only screen and (max-width: 767px) {
-  body {
-    width: 252px;
-    padding: 48px 34px 60px;
+  #me {
+    width: 680px;
+    margin-left: 32px;
+    text-align: left;
+  }
+  #left {
+    width: 696px;
+    margin-right: 8px;
+  }
+  #left ul.nav {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    margin: 12px 20px;
+  }
+  #left ul.nav li {
+    float: left;
+    padding: 12px;
+    margin: 0;
+    text-indent: 0;
+  }
+  #left ul.nav li .arrow-left {
+    display: none;
+  }
+  #right {
+    width: 696px;
+    margin-right: 8px;
   }
 }
 /*		Wide Mobile Layout: 480px.
@@ -437,5 +452,124 @@ px			68		160		 252		344		 436		*/
   body {
     width: 436px;
     padding: 36px 22px 48px;
+    font: 14px/24px Helvetica, sans-serif;
+  }
+  #me {
+    text-align: left;
+    margin-left: 32px;
+    width: 404px;
+  }
+  #right {
+    width: 436px;
+  }
+  #right .content .img.full img {
+    width: 364px;
+  }
+  #right .content .img.half img {
+    width: 166px;
+  }
+  #left {
+    width: 436px;
+    margin-right: 8px;
+  }
+  #left ul.nav {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    margin: 12px 20px;
+  }
+  #left ul.nav li {
+    float: left;
+    padding: 6px;
+    margin: 0;
+    text-indent: 0;
+  }
+  #left ul.nav li .arrow-left {
+    display: none;
+  }
+  .resume h3 {
+    line-height: 1em;
+    float: left;
+    width: 100%;
+    margin: 1em 0 0.5em 0;
+  }
+  .resume h4, .resume h5 {
+    line-height: 1em;
+    float: left;
+    width: 100%;
+    margin: 0.5em 0;
+  }
+  .resume p {
+    width: 100%;
+    margin: 0;
+  }
+}
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols		1			2			 3
+px			68		160		 252		*/
+@media only screen and (max-width: 479px) {
+  body {
+    width: 252px;
+    padding: 48px 34px 60px;
+    font: 12px/20px Helvetica, sans-serif;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+  #me {
+    text-align: left;
+    margin-left: 32px;
+    width: 220px;
+  }
+  #right {
+    width: 252px;
+  }
+  #right .content .img.full img {
+    width: 181px;
+  }
+  #right .content .img.half img {
+    width: 181px;
+  }
+  #left {
+    width: 252px;
+    margin-right: 8px;
+  }
+  #left ul.nav {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    margin: 12px 20px;
+  }
+  #left ul.nav li {
+    float: left;
+    padding: 6px;
+    margin: 0;
+    text-indent: 0;
+  }
+  #left ul.nav li .arrow-left {
+    display: none;
+  }
+  .resume h3 {
+    line-height: 1em;
+    float: left;
+    width: 100%;
+    margin: 1em 0 0.5em 0;
+  }
+  .resume h4, .resume h5 {
+    line-height: 1em;
+    float: left;
+    width: 100%;
+    margin: 0.5em 0;
+  }
+  .resume p {
+    width: 100%;
+    margin: 0;
   }
 }
