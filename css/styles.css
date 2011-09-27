@@ -306,6 +306,9 @@ h1 a, h1 a:active, h1 a:hover {
   margin: 0;
   margin-bottom: 25px;
 }
+#right .summary h3 {
+  display: none;
+}
 #right .summary ul {
   list-style: none;
   margin-left: 0;
@@ -439,6 +442,16 @@ px			68		160		 252		344		 436		528		 620		712		 */
   #right {
     width: 696px;
     margin-right: 8px;
+    /* </ .summary > */
+  
+  }
+  #right .summary h3 {
+    display: block;
+  }
+  #right .summary li {
+    height: auto;
+    margin: 0 0 1em 0;
+    text-indent: 0;
   }
 }
 /*		Wide Mobile Layout: 480px.
@@ -461,12 +474,22 @@ px			68		160		 252		344		 436		*/
   }
   #right {
     width: 436px;
+    /* </ .summary > */
+  
   }
   #right .content .img.full img {
     width: 364px;
   }
   #right .content .img.half img {
     width: 166px;
+  }
+  #right .summary h3 {
+    display: block;
+  }
+  #right .summary li {
+    height: auto;
+    margin: 0 0 1em 0;
+    text-indent: 0;
   }
   #left {
     width: 436px;
@@ -530,12 +553,22 @@ px			68		160		 252		*/
   }
   #right {
     width: 252px;
+    /* </ .summary > */
+  
   }
   #right .content .img.full img {
     width: 181px;
   }
   #right .content .img.half img {
     width: 181px;
+  }
+  #right .summary h3 {
+    display: block;
+  }
+  #right .summary li {
+    height: auto;
+    margin: 0 0 1em 0;
+    text-indent: 0;
   }
   #left {
     width: 252px;

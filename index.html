@@ -7,11 +7,11 @@ title: Home
 	  this enables the summary list to line-up with the nav list.
   -->
   <ul class="summary">
-    {% for post in site.posts %}
-    {% if post.tags contains 'test' %}
-    {% else %}
-    <li><p>{% if post.summary %}{{ post.summary }}{% else %}{{ post.title }}{% endif %}</p></li>
-    {% endif %}
-    {% endfor %}
+	{% for post in site.posts %}
+	{% if post.tags contains 'test' %}
+	{% else %}
+	<li><h3>{{ post.title }}</h3><p>{% if post.summary %}{{ post.summary }}{% else %}{{ post.title }}{% endif %}</p></li>
+	{% endif %}
+	{% endfor %}
   </ul>
 
