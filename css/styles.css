@@ -255,6 +255,9 @@ h1 a, h1 a:active, h1 a:hover {
 #right .content {
   margin: 25px;
 }
+#right .content a, #right .content a:active {
+  color: #8c8cd9;
+}
 #right .corner {
   border-color: white;
   border-style: solid;
