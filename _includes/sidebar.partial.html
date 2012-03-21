@@ -1,6 +1,6 @@
 		<ul class="nav">
 		  {% for post in site.posts %}
-		  	{% if post.tags contains 'test' %}
+			{% if post.tags contains 'test' %}
 			{% else %}
 					{% assign class = 'default' %}
 					{% assign arrow = ' ' %}
@@ -21,5 +21,13 @@
 				  {% assign arrow = 'arrow-left' %}
 				{% endif %}
 		  <li class="{{ class }}"><a href="/jon-beebe-resume.html">Résumé</a><div class="{{ arrow }}"></div></li>
+
+				{% assign class = 'default' %}
+				{% assign arrow = ' ' %}
+				{% if page.url == '/about-jon-beebe.html' %}
+				  {% assign class = 'active' %}
+				  {% assign arrow = 'arrow-left' %}
+				{% endif %}
+		  <li class="{{ class }}"><a href="/about-jon-beebe.html">About</a><div class="{{ arrow }}"></div></li>
 		</ul>
 
