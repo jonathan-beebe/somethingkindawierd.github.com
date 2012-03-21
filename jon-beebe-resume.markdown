@@ -17,7 +17,17 @@ Studied Art History and Fine Arts at Parson art school in Paris, France
 
 ### Employment History
 
-#### March 2010 – Present
+#### October 2011 – Present
+
+##### Architect & Developer – LightWORK Solutions
+
+Responsible for architecting, designing, implementing, deploying, and maintaining
+custom web-apps and web-software written for clients.
+
+To date my most notable achievement has been implementing a complete social-network
++ web-app infrastructure in Yii.
+
+#### March 2010 – October 2011
 
 ##### Architect & Developer – Vortal Group
 
