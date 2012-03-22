@@ -10,10 +10,10 @@ title: Home
 	{% for post in site.posts %}
 	{% if post.tags contains 'test' %}
 	{% else %}
-	<li><h3>{{ post.title }}</h3><p>{% if post.summary %}{{ post.summary }}{% else %}{{ post.title }}{% endif %}</p></li>
+	<li><a href="{{post.url}}" title="{{post.title}}" ><h3>{{ post.title }}</h3></a><p>{% if post.summary %}{{ post.summary }}{% else %}{{ post.title }}{% endif %}</p></li>
 	{% endif %}
 	{% endfor %}
-	<li><p>My digital résumé</p></li>
-	<li><p>My best attempt at summarizing what keeps me ticking. </p></li>
+	<li><a href="/jon-beebe-resume.html" title="Jon Beebe's Resume" ><h3>Résumé</h3></a><p>My digital résumé</p></li>
+	<li><a href="/about-jon-beebe.html" title="About Jon Beebe" ><h3>About Jon Beebe</h3></a><p>My best attempt at summarizing what keeps me ticking. </p></li>
   </ul>
 
