@@ -3,6 +3,7 @@ layout: project
 title: Prodori
 category: project
 summary: An elegant site suited for the high-end jewelry market.
+tags: hidden
 ---
 Prodori
 =======

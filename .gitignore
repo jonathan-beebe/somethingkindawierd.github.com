@@ -2,4 +2,5 @@
 _site/
 *.swp
 .DS_Store
+.project
 notes.md

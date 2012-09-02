@@ -7,10 +7,10 @@ summary: My best attempt to summarize what keeps me ticking.
 About Jon Beebe
 ===============
 
-This site is my digital résumé & portfolio; you can learn what I do for a living, 
+This site is my digital résumé & portfolio; you can learn what I do for a living,
 what I'm about, what keeps me ticking.
 
-What follows below is my best attempt at summarizing it all.
+The following is my best attempt at summarizing it all.
 
 Vision Statement
 ==============
@@ -34,9 +34,9 @@ Or an answer to *"how am I going to make my vision a reality?"*
 My Favorite Quote
 =================
 
-> The heights by great men reached and kept 
-> were not attained by sudden flight, 
-> but they while their companions slept, 
+> The heights by great men reached and kept
+> were not attained by sudden flight,
+> but they while their companions slept,
 > were toiling upward in the night.
 
 &mdash; Henry Wadsworth Longfellow

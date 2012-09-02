@@ -2,6 +2,7 @@
 layout: project
 title: Global Menu
 category: project
+tags: hidden
 summary: A globally accessible menu for accessing a company's admin/customer service tools across multiple support domains.
 ---
 Global Menu

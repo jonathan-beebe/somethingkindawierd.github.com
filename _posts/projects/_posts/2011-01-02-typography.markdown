@@ -1,9 +1,9 @@
 ---
 layout: project
-title: So Shopping
+title: Typography
 category: project
-summary: An ecommerce site with an integrated game-layer.
-tags: test
+summary: Testing the typography of this theme
+tags: hidden
 ---
 Heading 1
 =========

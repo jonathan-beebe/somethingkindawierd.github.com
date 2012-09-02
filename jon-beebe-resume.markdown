@@ -2,9 +2,15 @@
 layout: resume
 title: Jon Beebe's Résumé
 ---
-#### Objective
 
-To explore the unrealized potential of internet technology serving business and facilitating communication
+#### My Vision
+
+To experience the abundant life God intended; exceed my wife’s expectations daily; and make a living building open source software.
+
+#### Contact Information
+
+Email: somethingkindawierd@gmail.com<br />
+Twitter: [@bejonbee](http://twitter.com/bejonbee)
 
 ### Education
 
@@ -24,14 +30,24 @@ Studied Art History and Fine Arts at Parson art school in Paris, France
 Responsible for architecting, designing, implementing, deploying, and maintaining
 custom web-apps and web-software written for clients.
 
+Additionally I've created [native iOS mobile apps](/projects/ios-app-development). Most of these apps have been
+designed to tightly integrate with the client's web services, enhancing the user's
+experience and bringing more value from the client's web presence.
+
 To date my most notable achievement has been implementing a complete social-network
-+ web-app infrastructure in Yii.
++ web-app infrastructure in [Yii](yiiframework.com) + accompanying iOS app.
 
 #### Mar 2010 – Oct 2011
 
 ##### Architect & Developer – Vortal Group
 
-Responsible for creating and maintaining object-oriented php + javascript applications. All projects created within a PHP5 MVC framework, making extensive use of jQuery/Ajax. Notable accomplishments include building a single unified PHP5 api facade/wrapper for Google AdWords, Microsoft AdCenter, and Yahoo EWS paid ad networks, and growing a biweekly email campaign & social internet infrastructure to organically increase traffic and conversions. Most recent project involves using PHP/MooTools + APE to create an interactive game-layer across ecommerce platforms, along with a PHP API for 3rd party vendors to access and interact with the game.
+Responsible for creating and maintaining object-oriented php + javascript applications,
+making heavy use of a PHP5 MVC framework, jQuery, and ajax.
+Notable accomplishments include building a single unified PHP5 api facade/wrapper for
+Google AdWords, Microsoft AdCenter, and Yahoo EWS paid ad networks; growing a biweekly
+email campaign & social internet infrastructure to organically increase traffic and conversions;
+and using PHP/MooTools + APE to [create an interactive game-layer](/projects/game-layer/) across
+ecommerce platforms.
 
 #### Jan 2005 – Feb 2010
 
@@ -55,23 +71,23 @@ Coordinated web applications, custom scripts, hardware, and production processes
 
 #### Languages
 
-Javascript, PHP 4 & 5, MySQL, XHTML/HTML, CSS, ActionScript 2 & 3, AppleScript
+Javascript, PHP 4 & 5, MySQL, XHTML/HTML, CSS, ActionScript 2 & 3, AppleScript, Objective-C
 
-#### Javascript Libraries
+#### Libraries & Frameworks
 
-jQuery, MooTools, YUI
+jQuery, MooTools, YUI, Cocoa/Cocoa Touch
 
-#### Technologies
+#### API's
 
-AJAX, APE (Ajax Push Engine), MySQL
+Google AdWords, MS AdCenter, Facebook, Twitter, Intuit Merchant Services
 
 #### Operating Systems
 
-Mac OS X, Linux (primarily Debian-based)
+Mac OS X, Linux (Ubuntu & Debian)
 
 #### Graphics Apps
 
-Photoshop, Illustrator, The GIMP, Inkscape, Flash
+Photoshop, Illustrator, The GIMP
 
 #### Version Control
 
@@ -80,4 +96,3 @@ git, svn
 ### Strengths
 
 Highly creative, self-motivated and self-managed. Embrace team-environments. Talent for diagnosing problems and crafting solutions. Very organized, manifesting itself in well-commented, easy to follow code. Good communication skills, especially when communicating complex, technical subjects to non-technical people. Passion for open-source.
-

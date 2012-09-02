@@ -2,6 +2,7 @@
 layout: project
 title: The Game Layer
 category: project
+tags: hidden
 summary: My foray into the game layer of the *net
 ---
 The Game Layer
@@ -26,7 +27,7 @@ Users don't simply shop; they play the game.
 
 ### What makes SoShopping Unique?
 
-The framework we developed utilizes [APE](ape) to keep a live connection to each
+The framework we developed utilizes [APE](http://www.ape.org) to keep a live connection to each
 user's browser. This allowed us to *push* information to users, responding to game
 events in *real-time*, resulting in rich interactivity not seen in most sites. APE literally opens a channel to more deeply engage the customer.
 
@@ -53,8 +54,5 @@ And, of course, we had the ubiquitous leaderboard. As this screenshot illustrate
 <img src="/images/projects/game-layer/soshopping-leaderboard.jpg" />
 </div>
 
-
-
-[gamelayer]: http://www.ted.com/talks/seth_priebatsch_the_game_layer_on_top_of_the_world.html
-[ape]: http://www.ape.org
-
+Sadly, the company supporting So Shopping ceased operations of the site.
+This is all I have left to show of it :(
