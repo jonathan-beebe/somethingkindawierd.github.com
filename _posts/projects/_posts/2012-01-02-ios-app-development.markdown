@@ -5,20 +5,17 @@ category: project
 summary: iOS Apps created by Jon Beebe
 ---
 
-# Dreams (working-title)
+# PROCUTX
 
-In collaboration with [Beebe Hargrove](http://www.beebeart.com/) [(@beebeart)](http://twitter.com/beebeart),
-Dreams is becoming a beautiful, immersive, full-screen iPad book.
-
-This original story, written and illustrated by Beebe Hargove, is in the early
-stages of being brought to life. Each page is fully interactive, allowing children to touch, shake,
-blow, and experience the world of the dreamer.
+In collaboration with [Pixel Film Studios](http://www.pixelfilmstudios.com) I helped design and build PROCUTX — an iOS iPad application that allows editors to control Final Cut Pro X on their MAC through an iPad. You can view it on the [Apple iOS App Store here](https://itunes.apple.com/us/app/procutx-for-final-cut-pro-x/id596946635?ls=1&mt=8).
 
 <div class="img full">
-<img src="/images/projects/ios-dreams-book/dreams.jpg" />
+<img src="/images/projects/procutx/procutx.ipad.640.1.jpg" />
 </div>
 
-I will post more shortly as we continue to develop the app.
+PROCUTX included many design challenges, most notably setting up a Bonjour connection between the Mac OSX computer and the iPad. Not only did I have to create the iOS app, I had to build an OSX Bonjour server & an OSX System Preference Pane for managing the OSX server component.
+
+PROCUTX enjoys a loyal fan base which has contributed greatly to its success and continued growth. Here's one [fan made video I really enjoy](http://www.youtube.com/watch?v=zYE6XegZqpo).
 
 # Vela Player
 
@@ -50,3 +47,18 @@ Speech Recognition software.
 </div>
 
 To learn more about Vela Player please visit the [app's official site](http://www.velaapp.com/app/ "Vela — Hands Free Music").
+
+# Dreams (working-title)
+
+In collaboration with [Beebe Hargrove](http://www.beebeart.com/) [(@beebeart)](http://twitter.com/beebeart),
+Dreams is becoming a beautiful, immersive, full-screen iPad book.
+
+This original story, written and illustrated by Beebe Hargove, is in the early
+stages of being brought to life. Each page is fully interactive, allowing children to touch, shake,
+blow, and experience the world of the dreamer.
+
+<div class="img full">
+<img src="/images/projects/ios-dreams-book/dreams.jpg" />
+</div>
+
+I will post more shortly as we continue to develop the app.
