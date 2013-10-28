@@ -19,7 +19,7 @@ and final deployment & maintenance.
 <img src="/images/projects/websites/296/isaly-group.jpg" />
 </div>
 <div class="img half right">
-	<a href="/projects/game-layer/" title="SoShopping, and the framework we created, were designed to progress e-commerce beyond the static search & buy experience. We integrated game-dynamics into the site, influencing what users do and how they do it.">
+	<a href="/projects/game-layer/" title="SoShopping, and the framework we created, were designed to progress e-commerce beyond the static search &amp; buy experience. We integrated game-dynamics into the site, influencing what users do and how they do it.">
 		<img src="/images/projects/websites/296/soshopping-achievements.jpg" />
 	</a>
 </div>
