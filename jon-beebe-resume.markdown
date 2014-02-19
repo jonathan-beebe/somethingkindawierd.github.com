@@ -23,7 +23,13 @@ Studied Art History and Fine Arts at Parson art school in Paris, France
 
 ### Employment History
 
-#### Oct 2011 – Present
+#### Sept 2013 — Present
+
+##### Front End Web Dev for Dave Ramsey — Lampo Group, Inc.
+
+Focusing on new product development. Currently prototyping and developing small-screen and large-screen products, helping millions to get out of debt. I quite literally get to bring hope to millions every day through my code.
+
+#### Oct 2011 – Aug 2013
 
 ##### Architect & Developer – LightWORK Solutions
 
@@ -34,8 +40,7 @@ Additionally I've created [native iOS mobile apps](/projects/ios-app-development
 designed to tightly integrate with the client's web services, enhancing the user's
 experience and bringing more value from the client's web presence.
 
-To date my most notable achievement has been implementing a complete social-network
-+ web-app infrastructure in [Yii](yiiframework.com) + accompanying iOS app.
+Notable achievements include implementing a complete social-network & web-app infrastructure in [Yii](yiiframework.com) + accompanying iOS app.
 
 #### Mar 2010 – Oct 2011
 
