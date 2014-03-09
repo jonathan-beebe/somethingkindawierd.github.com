@@ -4,3 +4,5 @@ _site/
 .DS_Store
 .project
 notes.md
+node_modules
+src/bower_components

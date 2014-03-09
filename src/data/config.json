@@ -1,0 +1,15 @@
+{
+	"site": {
+		"layouts": {
+			"pages": "default.hbs",
+			"posts": "default.hbs"
+		},
+		"home": {
+			"title": "Blog",
+			"url": "/blog/index.html"
+		},
+		"blog": {
+			"url": "/blog/index.html"
+		}
+	}
+}

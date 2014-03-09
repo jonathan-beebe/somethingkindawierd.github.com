@@ -1,0 +1,205 @@
+//@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,700);
+
+$large-width: 800px;
+
+::selection			{background: rgb(255,255,158);}
+::-moz-selection	{background: rgb(255,255,158);}
+img::selection		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+body {
+	font: 16px/24px Helvetica, sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	text-shadow: 0 1px 0 white;
+	
+	max-width: $large-width;
+	padding: 34px 48px 84px;
+	background: rgb(232,232,232);
+	color: rgb(60,60,60);
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+	margin: 0 auto;
+}
+a, a:active { color: rgb(90,90,150); }
+a:hover { color: rgb(120,120,200); }
+h1 a, h1 a:active, h1 a:hover { color: rgb(60,60,60); }
+
+.badge, .label {
+	text-shadow: none;
+}
+
+h1, 
+h2, 
+h3,
+h4,
+h5,
+.strong {
+	font-weight: 700;
+}
+
+.hero-me {
+	text-align: center;
+}
+
+// Resume
+// ======
+
+.resume {
+	
+	margin-top: 48px;
+
+	h3 {
+		width: 100%;
+		border-bottom: 1px solid #999;
+		padding: 0 0 0.5em 0;
+		margin: 2em 0 1em 0;
+	}
+
+	h4 {
+		width: 33%;
+		float: left;
+		margin-top: 0;
+	}
+
+	p {
+		margin: 0 0 1em 33%;
+	}
+	
+} /* </ .resume > */
+
+@media only screen and (max-width: $large-width) {
+	.resume {
+		h3 {
+			line-height: 1em;
+			float: left;
+			width: 100%;
+			margin: 1em 0 0.5em 0;
+		}
+
+		h4, h5 {
+			line-height: 1em;
+			float: left;
+			width: 100%;
+			margin: 0.5em 0;
+		}
+
+		p {
+			width: 100%;
+			margin: 0;
+		}
+	}
+}
+
+//----
+
+/* github.com style (c) Vasily Polovnyov <vast@whiteants.net> */
+pre code {
+  display: block;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8ff;
+}
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .javadoc {
+  color: #998;
+  font-style: italic;
+}
+pre .keyword,
+pre .css .rule .keyword,
+pre .winutils,
+pre .javascript .title,
+pre .nginx .title,
+pre .subst,
+pre .request,
+pre .status {
+  color: #333;
+  font-weight: bold;
+}
+pre .number,
+pre .hexcolor,
+pre .ruby .constant {
+  color: #099;
+}
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula {
+  color: #960f4a;
+}
+pre .title,
+pre .id,
+pre .coffeescript .params,
+pre .scss .preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+pre .javascript .title,
+pre .lisp .title,
+pre .clojure .title,
+pre .subst {
+  font-weight: normal;
+}
+pre .class .title,
+pre .haskell .type,
+pre .vhdl .literal,
+pre .tex .command {
+  color: #458;
+  font-weight: bold;
+}
+pre .tag,
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+  color: #000080;
+  font-weight: normal;
+}
+pre .attribute,
+pre .variable,
+pre .lisp .body {
+  color: #008080;
+}
+pre .regexp {
+  color: #009926;
+}
+pre .class {
+  color: #458;
+  font-weight: bold;
+}
+pre .symbol,
+pre .ruby .symbol .string,
+pre .lisp .keyword,
+pre .tex .special,
+pre .prompt {
+  color: #990073;
+}
+pre .built_in,
+pre .lisp .title,
+pre .clojure .built_in {
+  color: #0086b3;
+}
+pre .preprocessor,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .cdata {
+  color: #999;
+  font-weight: bold;
+}
+pre .deletion {
+  background: #ffdddd;
+}
+pre .addition {
+  background: #ddffdd;
+}
+pre .diff .change {
+  background: #0086b3;
+}
+pre .chunk {
+  color: #aaaaaa;
+}
+
+//----

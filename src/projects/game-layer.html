@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+		
+		<title>Title</title>
+		<link rel="stylesheet" media="all" href="/assets/vendor/bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" media="all" href="/assets/styles/styles.css"/>
+		
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+	<body>
+	
+    <div class="container-fluid">
+				<div class="hero hero-me">
+		<h1 class="strong"><a href="/blog/index.html" title="Most everyone calls me Jon, except my family&hellip;they still call be Jonathan">Jon(athan) Beebe</a></h1>
+		<div>
+			<a href="/blog/index.html" title="Jon Beebe's Blog">blog</a> &bull;
+			<a href="/about-jon-beebe.html" title="About Jon Beebe">about</a> &bull;
+			<a href="/jon-beebe-resume.html" title="Jon Beebe's Resume">résumé</a> &bull;
+			<a href="http://www.beebeography.com" title="Jon Beebe's Photo Gallery">photography</a> &bull;
+			<a href="https://github.com/somethingkindawierd" title="Jon Beebe's Code Portfolio">github</a> &bull;
+			<a href="http://twitter.com/bejonbee" title="Jon Beebe on Twitter">twitter</a> &bull;
+			<a href="http://stackoverflow.com/users/123781/somethingkindawierd" title="Jon Beebe on stackoverflow.com">so</a>
+		</div>
+	</div>
+
+			<hr>
+			<div class="page-header">
+  <h1 class="strong">The Game Layer </h1>
+</div>
+			
+			
+
+<p>The past decade defined the social layer of the internet.</p>
+<p>This decade will <a href="http://www.ted.com/talks/seth_priebatsch_the_game_layer_on_top_of_the_world.html">define the game layer</a> (<em>or so they say</em>.)</p>
+<p>SoShopping was my foray into the game layer.</p>
+<h2 id="soshopping">SoShopping</h2>
+<p>SoShopping, and the framework we created, were designed to progress e-commerce beyond the static search &amp; buy experience. We integrated game-dynamics into the site, influencing what users do and how they do it.</p>
+<p>Users don&#39;t simply shop; they play the game.</p>
+<div class="thumbnail">
+    <img class="img-responsive" src="/assets/images/projects/game-layer/soshopping-user-profile.jpg" />
+</div>
+
+<h3 id="what-makes-soshopping-unique-">What makes SoShopping Unique?</h3>
+<p>The framework we developed utilizes <a href="http://www.ape.org">APE</a> to keep a live connection to each
+user&#39;s browser. This allowed us to <em>push</em> information to users, responding to game
+events in <em>real-time</em>, resulting in rich interactivity not seen in most sites. APE literally opens a channel to more deeply engage the customer.</p>
+<p>To keep the site responsive we created a <a href="https://github.com/somethingkindawierd/somethingkindawierd.github.com/wiki/Detached-PHP-Events">server-side event system capable of
+spinning off forked php processes</a>. The thread initiating the action could return immediately, keeping the browsing exerience fast. The forked process completes its work independently of the parent process. When completed, APE pushes the response to the user(s).</p>
+<p>The result is an interactive experience with immersive action/response mechanisms, engaging the users attention and keeping it.</p>
+<p>The screenshot shown below demonstrates a pushed message. Based on the user&#39;s action of lowering the price a message has been pushed to their browser in response. Similar messages might have been pushed to others within the users circle of friends, or to users who&#39;ve already expressed interest in the product.</p>
+<div class="thumbnail">
+    <img class="img-responsive" src="/assets/images/projects/game-layer/soshopping-price-drop.jpg" />
+</div>
+
+<p>At all times a user (player) can track achievements and rewards, learn about their next goals, and get clues about hidden features to be unlocked at later stages in the game.</p>
+<div class="thumbnail">
+    <img class="img-responsive" src="/assets/images/projects/game-layer/soshopping-achievements.jpg" />
+</div>
+
+<p>And, of course, we had the ubiquitous leaderboard. As this screenshot illustrates, we leveraged the social-layer, allowing users to connect, form teams, and enhance the energy built within the game.</p>
+<div class="thumbnail">
+    <img class="img-responsive" src="/assets/images/projects/game-layer/soshopping-leaderboard.jpg" />
+</div>
+
+<p>Sadly, the company supporting So Shopping ceased operations of the site.
+This is all I have left to show of it :(</p>
+
+    </div><!-- /.container -->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.js"></script> 
+	</body>
+</html>

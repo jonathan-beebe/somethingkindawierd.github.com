@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+		
+		<title>Title</title>
+		<link rel="stylesheet" media="all" href="/assets/vendor/bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" media="all" href="/assets/styles/styles.css"/>
+		
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+	<body>
+	
+    <div class="container-fluid">
+				<div class="hero hero-me">
+		<h1 class="strong"><a href="/blog/index.html" title="Most everyone calls me Jon, except my family&hellip;they still call be Jonathan">Jon(athan) Beebe</a></h1>
+		<div>
+			<a href="/blog/index.html" title="Jon Beebe's Blog">blog</a> &bull;
+			<a href="/about-jon-beebe.html" title="About Jon Beebe">about</a> &bull;
+			<a href="/jon-beebe-resume.html" title="Jon Beebe's Resume">résumé</a> &bull;
+			<a href="http://www.beebeography.com" title="Jon Beebe's Photo Gallery">photography</a> &bull;
+			<a href="https://github.com/somethingkindawierd" title="Jon Beebe's Code Portfolio">github</a> &bull;
+			<a href="http://twitter.com/bejonbee" title="Jon Beebe on Twitter">twitter</a> &bull;
+			<a href="http://stackoverflow.com/users/123781/somethingkindawierd" title="Jon Beebe on stackoverflow.com">so</a>
+		</div>
+	</div>
+
+			<hr>
+			<div class="page-header">
+  <h1 class="strong">Post 1 </h1>
+</div>
+				
+				<span class="label label-default">Dec 28, 2013</span>
+				<br>				<br>
+			
+			
+
+My Post 1
+
+<script src="https://gist.github.com/9252009.js"></script>
+
+<hr>
+
+<h2 id="markdown-embedded-code">Markdown embedded code</h2>
+<pre><code class="language-js">$.fn.scrollLock = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+  <span class="keyword">return</span> $(<span class="keyword">this</span>).on(<span class="string">"DOMMouseScroll mousewheel"</span>, <span class="function"><span class="keyword">function</span> <span class="params">(h)</span> {</span>
+    <span class="keyword">var</span> g = $(<span class="keyword">this</span>),
+        f = <span class="keyword">this</span>.scrollTop,
+        d = <span class="keyword">this</span>.scrollHeight,
+        b = g.height(),
+        i = h.originalEvent.wheelDelta,
+        a = i &gt; <span class="number">0</span>,
+        c = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+          h.stopPropagation();
+          h.preventDefault();
+          h.returnValue = <span class="literal">false</span>;
+          <span class="keyword">return</span> <span class="literal">false</span>
+        };
+    <span class="keyword">if</span> (!a &amp;&amp; -i &gt; d - b - f) {
+      g.scrollTop(d);
+      <span class="keyword">return</span> c()
+    } <span class="keyword">else</span> {
+      <span class="keyword">if</span> (a &amp;&amp; i &gt; f) {
+        g.scrollTop(<span class="number">0</span>);
+        <span class="keyword">return</span> c()
+      }
+    }
+  })
+};
+
+$.fn.scrollRelease = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+  <span class="keyword">return</span> $(<span class="keyword">this</span>).off(<span class="string">"DOMMouseScroll mousewheel"</span>)
+};</code></pre>
+
+    </div><!-- /.container -->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.js"></script> 
+	</body>
+</html>
