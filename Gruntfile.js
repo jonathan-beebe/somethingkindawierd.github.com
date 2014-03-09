@@ -104,7 +104,7 @@ module.exports = function(grunt) {
 
 
   // Default task(s).
-  grunt.registerTask('dist', ['assemble', 'sass', 'copy']);
+  grunt.registerTask('dist', ['clean', 'assemble', 'sass', 'copy']);
   grunt.registerTask('default', ['dist']);
 
 };
