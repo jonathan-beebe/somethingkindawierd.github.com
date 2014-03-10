@@ -7,7 +7,7 @@ isIndex: true
 {{#withSort pages 'date' dir='desc'}} 
 	{{#if data.published}}
     <p class="lead">
-			<a href="{{basename}}.html"> {{data.title }}</a>
+			<a href="/blog/{{basename}}.html"> {{data.title }}</a>
 		</p>
 		{{#if data.description}}
 			<p>{{data.description}}</p>
