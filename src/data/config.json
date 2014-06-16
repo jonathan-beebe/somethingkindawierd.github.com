@@ -6,10 +6,10 @@
 		},
 		"home": {
 			"title": "Blog",
-			"url": "/blog/index.html"
+			"url": "/about-jon-beebe.html"
 		},
 		"blog": {
-			"url": "/blog/index.html"
+			"url": "http://bejonbee.roon.io/"
 		}
 	}
 }

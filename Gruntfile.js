@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 				}]
 			},
 			index: {
-				src: 'blog/index.html',
+				src: 'about-jon-beebe.html',
 		    dest: 'index.html'
 			}
 		},
@@ -48,18 +48,6 @@ module.exports = function(grunt) {
 					flatten: true,
 					src: ['projects/*.{hbs,md}'], 
 					dest: './projects/'
-				}]
-      },
-      blog: {
-				options: {
-					//layout: 'blog-post.hbs'
-				},
-				files: [{
-					expand: true,
-					cwd: 'src/', 
-					flatten: true,
-					src: ['posts/*.{hbs,md}'], 
-					dest: './blog/'
 				}]
       }
     },
