@@ -11,6 +11,13 @@
   <link rel="stylesheet" href="/assets/css/font-awesome.css">
   <link rel="alternate" type="application/rss+xml" title="My Blog" href="/rss.xml">
   <link rel="stylesheet" href="/assets/css/tomorrow-night.css">
+
+  {% if page.meta-refresh %}
+  <meta http-equiv="refresh" content="0; url={{ site.baseurl }}{{ page.meta-refresh }}">
+  {% endif %}
+  {% if page.meta-canonical %}
+  <link rel="canonical" href="{{ site.baseurl }}{{ page.meta-canonical }}" />
+  {% endif %}
 </head>
 <body>
 
