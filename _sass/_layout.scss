@@ -1,0 +1,53 @@
+html, body { height: 100%; }
+
+nav.main-nav {
+  padding: 20px 20px 0;
+
+  /*max-width: 600px;*/
+  /*width:100%;*/
+  background: #fff;
+  background: rgba(255,255,255,.90);
+  margin: 0 auto;
+  text-align: right;
+  /*position: fixed;*/
+  z-index: 100;
+}
+
+nav.main-nav a {
+  top: 8px;
+  right: 6px;
+  padding: 8px 8px;
+  color: #5badf0;
+  font-size: 13px;
+  line-height: 1.35;
+  border-radius: 3px;
+
+}
+nav.main-nav a.cta {
+  background: #5badf0;
+  color: #fff;
+  margin-left: 12px;
+}
+
+#wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 40px 100px 40px;
+}
+
+#wrapper.home {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px 40px 20px 40px;
+}
+
+.home #avatar {
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.cp_embed_iframe {
+  margin-bottom: 20px;
+}

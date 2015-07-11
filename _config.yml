@@ -1,0 +1,34 @@
+name: SomethingKindaWierd.com
+description: An iOS Developer for Ramsey Solutions
+meta_description: "Jon Beebe’s personal site"
+
+aboutPage: true
+
+markdown: redcarpet
+highlighter: pygments
+
+paginate: 20
+baseurl: /
+domain_name: 'http://somethingkindawierd.com'
+google_analytics: 'UA-4889093-2'
+
+# Details for the RSS feed generator
+url:            'http://somethingkindawierd.com'
+author:         'Jon Beebe'
+authorTwitter:  'bejonbee'
+
+permalink:       /:year/:month/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post

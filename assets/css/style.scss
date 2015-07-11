@@ -1,0 +1,41 @@
+---
+---
+
+@import "reset";
+@import "icons";
+@import "fonts";
+@import "typography";
+@import "layout";
+@import "profile";
+
+/*Transitions*/
+a,
+#post-nav a,
+#post-list a	{
+	-webkit-transition: all 0.15s ease;
+	-moz-transition: all 0.15s ease;
+	-ms-transition: all 0.15s ease;
+	-o-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+}
+
+/* Media Queries */
+@media screen and (max-width: 540px) {
+	#wrapper { padding:20px 20px 20px 20px;}
+	#header { margin-bottom: 60px; border-bottom: 1px solid #eee; }
+	.post { margin: 40px 0; }
+	#footer { margin-top: 60px; }
+
+	#post-list, #archive-list { margin-top: 0; }
+	#post-meta { margin-top: 60px; }
+
+	#title { font-size: 17px; }
+	#post-list .dates { display: none; }
+
+	#post-list-footer { margin-top: 20px; padding-top: 40px; }
+
+	h1 { font-size: 26px; }
+	.post h2.headline { font-size: 13px; }
+	.post h1 { font-size:24px; }
+	.post h2 { font-size:20px; }
+}
