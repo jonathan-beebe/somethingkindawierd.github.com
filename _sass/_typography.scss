@@ -1,5 +1,9 @@
+$font-sans-serif: "Avenir Next", "Helvetica Neue", "Helvetica", sans-serif;
+$font-serif: "sorts_mill_goudyregular", Helvetica, Arial, sans-serif;
+$font-code: "Source Code Pro", Menlo, Monaco, Courier, monospace;
+
 body {
-  font:21px/1 "sorts_mill_goudyregular", Helvetica, Arial, sans-serif;
+  font:21px/1 $font-serif;
   color: #666;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -66,7 +70,7 @@ b, strong {
 }
 em, i { 
   font-style: italic; 
-  font-family: "sorts_mill_goudyitalic", Helvetica,Arial,sans-serif;
+  font-family: $font-serif;
 }
 
 h3, h4, h5 { color:#333; }
@@ -102,21 +106,22 @@ hr {
   background: #eee;
 }
 
-span.code { font-family:Menlo, Monaco, Courier; background-color:#EEE; font-size:14px; }
+code,
+span.code { 
+  font-family: $font-code; 
+  font-size: 0.8em;
+  background: rgba(0,0,0,0.05);
+  padding: 0.2em;
+}
 
 pre {
-  font-family:Menlo, Monaco, Courier;
   white-space:pre-wrap;
-  /*border: 1px solid #ddd;*/
   padding:10px;
-  /*background-color:#fdfdfd;*/
-  /*font-size:14px;*/
   overflow:auto;
   border-radius: 3px;
-  /*background: #272b2d;*/
   /* match Tomorrow Night theme */
   background: #1D1F21 none repeat scroll 0% 0%; 
-  font-family: 'Source Code Pro',Menlo,monospace;
+  font-family: $font-code;
   font-size: 13px;
   line-height: 1.5em;
   font-weight: normal;
@@ -169,6 +174,28 @@ img {
   width: 100%;
   max-width: 100%;
   border-radius: 3px;
+}
+
+/**
+ * Footnotes
+ */
+
+a[rel="footnote"] {
+  font-family: $font-sans-serif;
+  font-size:small; 
+  vertical-align:top;
+  &::before {
+    content: "[";
+  }
+  &::after {
+    content: "]";
+  }
+}
+
+.footnotes {
+  font-family: $font-sans-serif;
+  font-size: 0.7em;
+  color: #999;
 }
 
 /* Made with Cactus Badge */

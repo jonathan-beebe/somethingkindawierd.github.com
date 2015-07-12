@@ -7,6 +7,17 @@ aboutPage: true
 markdown: redcarpet
 highlighter: pygments
 
+redcarpet:
+  extensions:
+    - footnotes
+    - strikethrough
+    - smart
+    - tables
+    - no_intra_emphasis
+    - autolink
+    - superscript
+    - with_toc_data
+
 paginate: 20
 baseurl: /
 domain_name: 'http://somethingkindawierd.com'
