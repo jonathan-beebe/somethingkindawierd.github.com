@@ -186,9 +186,11 @@ a[rel="footnote"] {
   vertical-align:top;
   &::before {
     content: "[";
+    vertical-align:inherit;
   }
   &::after {
     content: "]";
+    vertical-align:inherit;
   }
 }
 
