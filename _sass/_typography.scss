@@ -38,7 +38,7 @@ p a { color: #5694f1; }
 
 ul  { margin:0; padding:0; }
 li  { list-style-type:circle; }
-ol li { list-style-type:number; }
+ol li { list-style-type:decimal; }
 
 /* Spacing */
 h1, 
@@ -196,6 +196,10 @@ a[rel="footnote"] {
   font-family: $font-sans-serif;
   font-size: 0.7em;
   color: #999;
+
+  a {
+    word-wrap: break-word;
+  }
 }
 
 /* Made with Cactus Badge */
