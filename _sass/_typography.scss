@@ -1,6 +1,19 @@
 $font-sans-serif: "Avenir Next", "Helvetica Neue", "Helvetica", sans-serif;
-$font-serif: "sorts_mill_goudyregular", Helvetica, Arial, sans-serif;
+$font-serif: "sorts-mill-goudy", serif;
 $font-code: "Source Code Pro", Menlo, Monaco, Courier, monospace;
+
+%opentype-required {
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures, contextual;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt", "lnum";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt", "lnum";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "lnum";
+  font-feature-settings: "kern", "liga", "clig", "calt", "lnum";
+}
+
+html, body, * {
+  @extend %opentype-required;
+}
 
 body {
   font:21px/1 $font-serif;
