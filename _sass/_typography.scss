@@ -11,8 +11,8 @@ $font-code: "Source Code Pro", Menlo, Monaco, Courier, monospace;
   font-feature-settings: "kern", "liga", "clig", "calt", "lnum";
 }
 
-nav, div, section, article, header, footer, 
-a, p, span, 
+nav, div, section, article, header, footer, aside, 
+a, p, span, ul, ol, li,
 h1, h2, h3, h4, h5, h6 {
   @extend %opentype-required;
 }
