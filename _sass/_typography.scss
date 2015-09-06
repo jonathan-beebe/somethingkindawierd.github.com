@@ -11,7 +11,7 @@ $font-code: "Source Code Pro", Menlo, Monaco, Courier, monospace;
   font-feature-settings: "kern", "liga", "clig", "calt", "lnum";
 }
 
-nav, div, section, article, header, footer, aside, 
+nav, div, section, article, header, footer, aside,
 a, p, span, ul, ol, li,
 h1, h2, h3, h4, h5, h6 {
   @extend %opentype-required;
@@ -56,15 +56,15 @@ li  { list-style-type:circle; }
 ol li { list-style-type:decimal; }
 
 /* Spacing */
-h1, 
+h1,
 h2,
-h3, 
-h4, 
-h5, 
-p, 
-ul, 
-ol, 
-ul li, 
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+ul li,
 ol li,
 pre {
   margin-bottom: 20px;
@@ -79,12 +79,12 @@ p { line-height:1.7; }
 
 
 
-b, strong { 
+b, strong {
   font-weight: bold;
-  color: #1E2025; 
+  color: #1E2025;
 }
-em, i { 
-  font-style: italic; 
+em, i {
+  font-style: italic;
   font-family: $font-serif;
 }
 
@@ -122,9 +122,9 @@ hr {
 }
 
 code,
-span.code { 
-  font-family: $font-code; 
-  font-size: 0.8em;
+span.code {
+  font-family: $font-code;
+  font-size: 0.9em;
   background: rgba(0,0,0,0.05);
   padding: 0.2em;
 }
@@ -135,7 +135,7 @@ pre {
   overflow:auto;
   border-radius: 3px;
   /* match Tomorrow Night theme */
-  background: #1D1F21 none repeat scroll 0% 0%; 
+  background: #1D1F21 none repeat scroll 0% 0%;
   font-family: $font-code;
   font-size: 13px;
   line-height: 1.5em;
@@ -197,7 +197,7 @@ img {
 
 a[rel="footnote"] {
   font-family: $font-sans-serif;
-  font-size:small; 
+  font-size:small;
   vertical-align:top;
   &::before {
     content: "[";
