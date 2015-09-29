@@ -74,6 +74,23 @@ h1 {
   margin-top: 40px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.8em;
+  margin-top: 1.6em;
+}
+
+section {
+  h1:first-child,
+  h2:first-child {
+    margin-top: 0;
+  }
+}
+
 /* Line Height */
 p { line-height:1.7; }
 
@@ -144,6 +161,7 @@ span.code {
   overflow-wrap: break-word;
 }
 
+li code,
 p code {
   font-size: 0.85em;
 }
@@ -253,13 +271,11 @@ a[rel="footnote"] {
 }
 
 .post h1 {
-  margin-bottom:2 0px;
   color: #222;
   font: bold 32px/1.4em $font-serif;
 }
 
 .post h2 {
-  margin-bottom: 40px;
   font: bold 24px/1.5 $font-serif;
   color: #111;
 }

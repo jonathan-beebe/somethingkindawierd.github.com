@@ -38,4 +38,8 @@ a,
 	.post h2.headline { font-size: 13px; }
 	.post h1 { font-size:24px; }
 	.post h2 { font-size:20px; }
+	.post ul,
+	.post ol {
+		margin-left: 1em;
+	}
 }
