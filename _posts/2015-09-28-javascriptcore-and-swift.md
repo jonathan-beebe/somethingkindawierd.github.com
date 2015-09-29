@@ -100,7 +100,7 @@ Lets say you want to convert some markdown using the [pagedown library](https://
       └ Markdown.Converter.js
 ```
 
-This snippet shows how to read the contents of the file `Markdown.Converter.js` and inject it into your JSContext.
+The following snippet shows how to read the contents of the file `Markdown.Converter.js` and inject it into your JSContext.
 
 ```swift
 // get path to the pagedown source file
@@ -219,7 +219,7 @@ let nativeArray:[Int] = jsv.toArray() as! [Int]
 >> [1, 4, 9, 16, 25]
 ```
 
-You must be careful with this since you have no guarentee that your JSValue will actually contain the type you want. Here Swift provides some convenient guard patterns to protect you code. You can easily use `if let…` to protect against errors when the JSValue fails to cast, safely trapping the error.
+You must be careful with this since you have no guarantee that your JSValue will actually contain the type you want. Here Swift provides some convenient guard patterns to protect you code. You can easily use `if let…` to protect against errors when the JSValue fails to cast, safely trapping the error.
 
 ```swift
 let jsv = ...
@@ -263,11 +263,11 @@ You can find this called out in [Apple’s iOS Security Guide](https://www.apple
 
 Thus Safari, and WKWebView objects in iOS 8+, are allowed to run JavaScript at full-speed. But your apps and mine are not.
 
-I have not yet been able to confirm the same is true of OS X apps, other than annecdotal evidence. My suspicion is sandboxed apps from the OS X App Store are held to the same restrictions.
+I have not yet been able to confirm the same is true of OS X apps, other than anecdotal evidence. My suspicion is sandboxed apps from the OS X App Store are held to similar restrictions as iOS apps.
 
-How bad is the speed hit? Opinions vary. Andy Matuschak of the Kahn Academy ran [some benchmarks](https://github.com/Khan/JSContextBenchmarking) and [described the performance as “poor”](https://twitter.com/andy_matuschak/status/557301107845001217). However Telerik, who makes NativeScript, cites the performance hit to be [about 10%](http://developer.telerik.com/featured/nativescript-a-technical-overview/).
+How bad is the speed hit? Opinions vary. Andy Matuschak of the Kahn Academy ran [some benchmarks](https://github.com/Khan/JSContextBenchmarking) and described the performance as [“poor”](https://twitter.com/andy_matuschak/status/557301107845001217). However Telerik, who makes NativeScript, cites the performance hit to be [about 10%](http://developer.telerik.com/featured/nativescript-a-technical-overview/).
 
-In my own work on [EveryDollar](https://itunes.apple.com/us/app/everydollar/id942571931?mt=8) I have found the performance of JavaScriptCore to be acceptable. We are careful to use it for small, discrete tasks where the benefit of leveraging an exising library far outweights any minor performance hit we might encounter.
+In my own work on [EveryDollar](https://itunes.apple.com/us/app/everydollar/id942571931?mt=8) I have found the performance of JavaScriptCore to be quite acceptable. We are careful to use it for small, discrete tasks where the benefit of leveraging an existing JavaScript library far outweighs any minor performance hit we might encounter.
 
 ## Wrap Up
 
