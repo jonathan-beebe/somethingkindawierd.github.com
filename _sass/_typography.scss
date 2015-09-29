@@ -121,14 +121,6 @@ hr {
   background: #eee;
 }
 
-code,
-span.code {
-  font-family: $font-code;
-  font-size: 0.9em;
-  background: rgba(0,0,0,0.05);
-  padding: 0.2em;
-}
-
 pre {
   white-space:pre-wrap;
   padding:10px;
@@ -141,7 +133,19 @@ pre {
   line-height: 1.5em;
   font-weight: normal;
   color: #d0d4d7;
+}
 
+code,
+span.code {
+  font-family: $font-code;
+  font-size: inherit;
+  background: rgba(0,0,0,0.05);
+  padding: 0.2em;
+  overflow-wrap: break-word;
+}
+
+p code {
+  font-size: 0.85em;
 }
 
 table {
@@ -256,8 +260,8 @@ a[rel="footnote"] {
 
 .post h2 {
   margin-bottom: 40px;
-    font: bold 24px/1.5 $font-serif;
-    color: #111;
+  font: bold 24px/1.5 $font-serif;
+  color: #111;
 }
 
 
