@@ -219,7 +219,7 @@ let nativeArray:[Int] = jsv.toArray() as! [Int]
 >> [1, 4, 9, 16, 25]
 ```
 
-You must be careful with this since you have no guarantee that your JSValue will actually contain the type you want. Here Swift provides some convenient guard patterns to protect you code. You can easily use `if let…` to protect against errors when the JSValue fails to cast, safely trapping the error.
+You must be careful with this since you have no guarantee that your JSValue will actually contain the type you want. Here Swift provides some convenient guard patterns to protect your code. You can easily use `if let…` to protect against errors when the JSValue fails to cast, safely trapping the error.
 
 ```swift
 let jsv = ...
