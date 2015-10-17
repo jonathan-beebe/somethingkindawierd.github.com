@@ -55,6 +55,11 @@ ul  { margin:0; padding:0; }
 li  { list-style-type:circle; }
 ol li { list-style-type:decimal; }
 
+ul, ol {
+  margin-left: 1em;
+}
+
+
 /* Spacing */
 h1,
 h2,
@@ -164,6 +169,19 @@ span.code {
 li code,
 p code {
   font-size: 0.85em;
+}
+
+.highlight {
+  pre {
+	line-height: 1.3em;
+    white-space: pre;
+  }
+  code,
+  span.code {
+    overflow-wrap:normal;
+	padding: 0;
+	line-height: 1.3em;
+  }
 }
 
 table {
@@ -280,7 +298,6 @@ a[rel="footnote"] {
   color: #111;
 }
 
-
 .post .post-headline {
   font: bold 13px/1.5em $font-serif;
   margin: -5px 0 40px 0;
@@ -302,8 +319,9 @@ a[rel="footnote"] {
 /*=========================================
 Post List
 =========================================== */
-#post-list,#archive-list {
+#post-list, #archive-list {
   margin-top: 100px;
+  margin-left: 0;
 }
 
 #post-list li,#archive-list li {
