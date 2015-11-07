@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>reveal.js - The HTML Presentation Framework</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+	<style media="screen">
+	.reveal code {
+		font-family: "Source Code Pro", Menlo, Monaco, Courier, monospace;
+	}
+	</style>
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section data-markdown>
+				<script type="text/template">
+					# Native JavaScript
+					## A discussion about JavaScriptCore
+
+					Presented by Jon Beebe([@bejonbee](http://twitter.com/bejonbee))<br>
+					iOS developer at Ramsey Solutions
+
+					---
+
+					# This is my (!Node)vember talk
+
+					*because*
+
+					Node ← V8 ← Chrome ← Google
+
+					*competes with*
+
+					JavaScriptCore ← WebKit ← Apple
+
+					---
+
+					JavaScriptCore — The WebKit JavaScript engine
+
+					---
+
+					It really started to get interesting after 2008
+
+					---
+
+					# Why should you care?
+
+					- Enables rapid prototyping.
+					- Highly customizable runtime.
+					- Leverage the many diverse open source js libs.
+					- And…
+
+					---
+
+					![JavaScript is eating the world](images/thus-javascript-is-eating-the-world.jpg)
+
+					<small>
+						<cite>source: [Eating the world](http://www.gapatton.net/2015/06/155-eating-world.html)</cite>
+					</small>
+
+					---
+
+					# REPL
+
+					You already have a JavaScriptCore REPL on your Mac.
+
+					```bash
+					/System/Library/Frameworks/JavaScriptCore.framework/¬
+					Versions/A/Resources/jsc
+					```
+
+					*[Learn more](http://somethingkindawierd.com/2015/09/javascriptcore-repl/)*
+
+					---
+
+					# REPL
+
+					```bash
+					ln -s /System/Library/Frameworks/JavaScriptCore.framework/¬
+					Versions/A/Resources/jsc /usr/local/bin/jsc
+					```
+
+					---
+
+					# REPL
+
+					```js
+					jsc
+					>>> var pt = {x:10, y:20}
+					undefined
+					>>> pt
+					[object Object]
+					>>> JSON.stringify(pt)
+					{"x":10,"y":20}
+					```
+
+					---
+
+					# Environments
+
+					JavaScriptCore Offers two distinct environments
+
+					1. [JavaScriptCore Framework](https://developer.apple.com/library/prerelease/ios/documentation/JavaScriptCore/Reference/JSContext_Ref/)
+					2. [WKWebView & allociated delegates](https://developer.apple.com/library/ios/documentation/WebKit/Reference/WKWebView_Ref/index.html)
+
+					---
+
+					Let’s explore JavaScriptCore with Swift in an Xcode playground…
+
+					---
+
+					# Compilation Process
+
+					JavaScript is not an interpreted language.
+
+					It *can be* interpreted.
+
+					But that is an implementation detail.
+
+					---
+
+					# Compilation Process
+
+					JavaScript is a JITed language.
+
+					Modern JavaScript is supported by robust compilation tiers.
+
+					---
+
+					# Parsing
+
+					Before compilation begins JavaScript must be parsed.
+
+					(script) → Lexer → (tokens) → Parser → (bytecodes)
+
+					---
+
+					# Compilation Tiers
+
+					<dl>
+						<dt><dfn>LLInt</dfn></dt>
+						<dd>The Low Level Interpreter</dd>
+						<dt><dfn>Baseline JIT</dfn></dt>
+						<dd>Some quick-wins to speed up js</dd>
+						<dt><dfn>DFG JIT</dfn></dt>
+						<dd>A Data Flow Graph</dd>
+						<dt><dfn>FTL JIT</dfn></dt>
+						<dd>The Fourth Tier LLVM (Low Level Virtual Machine)</dd>
+					</dl>
+
+					---
+
+					![Four-tier javascript cake](images/4-tier-javascript-cake.jpg)
+
+					---
+
+					# LLInt
+
+					The LLInt interprets bytecode.
+
+					- Pros: No start-up cost — quick to spin-up.
+					- Cons: Slow execution. As in IE8-slow.
+
+					---
+
+					# Baseline JIT
+
+					Basic optimizations of the bytecodes.
+
+					- 10x faster than LLInt.
+					- For code invoked at least 6 times.
+					- Or code looped at least 100 times.
+
+					---
+
+					# DFG JIT
+
+					A data-flow-graph. Picks up where Baseline JIT left off.
+
+					- For code invoked at least 60 times.
+					- or code looped at least 1,000 times.
+
+					---
+
+					# FTL JIT
+
+					The Fourth-Tier LLVM, or Low Level Virtual Machine.
+
+					- Asynchronous compilation.
+					- For functions run 100,000 times or more.
+					- Same compiler used for native Swift compilation.
+
+					---
+
+					# OSR
+
+					Code flows through the compilation tiers through OSR: On Stack Replacement.
+
+					Newer compilations replace older version on the stack.
+
+					---
+
+					# OSR
+
+```
+┌──────────┐                                   ┌───────┐
+│  Script  │                                   │Compile│
+│   Text   │                                 ┌▶│  to   │─┐
+└──────────┘                                 │ │  DFG  │ │
+      │                                      │ └───────┘ │
+      ▼                                      │           ▼
+┌──────────┐  ┌───────┐  ┌──────────┐  ┌──────────┐─▶┌───────┐
+│  Parse   │  │       │  │ Compile  │  │ Execute  │  │Execute│
+│    to    │─▶│ LLInt │─▶│    to    │─▶│ Baseline │  │  DFG  │
+│ bytecode │  │       │  │ Baseline │  │          │  │       │
+└──────────┘  └───────┘  └──────────┘  └──────────┘◀─└───────┘
+```
+
+					---
+
+					Let’s explore some real-world examples
+
+					---
+
+					Markdown Stickies
+
+					---
+
+					MailCheck
+
+					---
+
+					## Pros
+
+					- Fast prototyping
+					- Leveraging existing js libs
+					- Aids both front-end and back-end work
+
+					<br>
+
+					## Cons
+
+					- Increased memory footprint
+					- Increased processing overhead
+					- Potentially slow due to JIT restrictions
+
+					---
+
+					# Further Study
+
+					<dl>
+						<dt><dfn>Read The Source, Luke</dfn></dt>
+						<dd>[Source/JavaScriptCore/API/*](http://trac.webkit.org/browser/trunk/Source/JavaScriptCore/API)</dd>
+						<dt><dfn>JSContext</dfn></dt>
+						<dd>The JavaScript execution environment. [[↗]](http://trac.webkit.org/browser/trunk/Source/JavaScriptCore/API/JSContext.h)</dd>
+						<dt><dfn>JSExport</dfn></dt>
+						<dd>Export native objects & classes to JavaScript. [[↗]](http://trac.webkit.org/browser/trunk/Source/JavaScriptCore/API/JSExport.h)</dd>
+						<dt><dfn>JSValue</dfn></dt>
+						<dd>A reference to a JavaScript value, with strong reference to originating JSContext. [[↗]](http://trac.webkit.org/browser/trunk/Source/JavaScriptCore/API/JSValue.h)</dd>
+						<dt><dfn>JSManagedValue</dfn></dt>
+						<dd>Kinda like a weak JSValue referenece. [[↗]](http://trac.webkit.org/browser/trunk/Source/JavaScriptCore/API/JSManagedValue.h)</dd>
+						<dt><dfn>JSVirtualMachine</dfn></dt>
+						<dd>Represents a single JavaScript “object space” or set of execution resources. [[↗]](http://trac.webkit.org/browser/trunk/Source/JavaScriptCore/API/JSVirtualMachine.h)</dd>
+					</dl>
+
+					---
+
+					# Thank You
+
+					Slides & Xcode Swift playground available on [github](https://github.com/somethingkindawierd/Native-JavaScript-Presentation).
+
+					[@bejonbee](http://twitter.com/bejonbee) on Twitter
+
+					---
+
+
+				</script>
+			</section>
+
+		</div>
+
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+	(function initializeMarkdownSections() {
+		var markdown = document.querySelectorAll('[data-markdown]');
+		[].forEach.call(markdown, function(element) {
+			element.setAttribute('data-separator', '^\n---\n$');
+			element.setAttribute('data-separator-vertical', '^\n------\n$');
+			element.setAttribute('data-separator-notes', '^Notes:');
+			element.setAttribute('data-charset', 'utf-8');
+		});
+	}());
+	</script>
+
+	<script>
+
+	// Full list of configuration options available at:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+		// Optional reveal.js plugins
+		dependencies: [
+			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true },
+			{ src: 'plugin/notes/notes.js', async: true }
+		]
+	});
+
+	</script>
+
+</body>
+</html>
