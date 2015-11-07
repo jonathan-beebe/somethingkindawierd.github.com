@@ -12,7 +12,8 @@ ctx.evaluateScript(content)
 
 //: A mostly javascript approach
 
-let script = "var converter = new Markdown.Converter();" +
+let script = "" +
+    "var converter = new Markdown.Converter();" +
     "var markdownText = \"# Hello World\";" +
     "converter.makeHtml(markdownText);"
 

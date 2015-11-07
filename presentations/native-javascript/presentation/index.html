@@ -30,6 +30,16 @@
 	</script>
 
 	<style media="screen">
+	.reveal,
+	.reveal h1,
+	.reveal h2,
+	.reveal h3,
+	.reveal h4,
+	.reveal h5,
+	.reveal h6 {
+		font-family: '-apple-system', 'Avenir', 'Avenir Next', 'Source Sans Pro', Helvetica, sans-serif;
+		text-transform: none;
+	}
 	.reveal code {
 		font-family: "Source Code Pro", Menlo, Monaco, Courier, monospace;
 	}
@@ -130,14 +140,15 @@
 
 					# Environments
 
-					JavaScriptCore Offers two distinct environments
+					JavaScriptCore offers two distinct environments
 
 					1. [JavaScriptCore Framework](https://developer.apple.com/library/prerelease/ios/documentation/JavaScriptCore/Reference/JSContext_Ref/)
-					2. [WKWebView & allociated delegates](https://developer.apple.com/library/ios/documentation/WebKit/Reference/WKWebView_Ref/index.html)
+					2. [WKWebView & associated delegates](https://developer.apple.com/library/ios/documentation/WebKit/Reference/WKWebView_Ref/index.html)
 
 					---
 
-					Let’s explore JavaScriptCore with Swift in an Xcode playground…
+					Let’s explore JavaScriptCore with<br>
+					Swift in an Xcode playground…
 
 					---
 
@@ -155,7 +166,8 @@
 
 					JavaScript is a JITed language.
 
-					Modern JavaScript is supported by robust compilation tiers.
+					Modern JavaScript is supported by<br>
+					robust compilation tiers.
 
 					---
 
@@ -199,7 +211,7 @@
 
 					Basic optimizations of the bytecodes.
 
-					- 10x faster than LLInt.
+					- 10⨉ faster than LLInt.
 					- For code invoked at least 6 times.
 					- Or code looped at least 100 times.
 
@@ -209,6 +221,7 @@
 
 					A data-flow-graph. Picks up where Baseline JIT left off.
 
+					- 30⨉ faster than LLInt.
 					- For code invoked at least 60 times.
 					- or code looped at least 1,000 times.
 
@@ -218,9 +231,19 @@
 
 					The Fourth-Tier LLVM, or Low Level Virtual Machine.
 
+					- 43⨉ faster than LLInt.
 					- Asynchronous compilation.
 					- For functions run 100,000 times or more.
 					- Same compiler used for native Swift compilation.
+					- At this stage all of JavaScript’s dynamism has been removed.
+
+					---
+
+					![JavaScriptCore compilation tier performance graph](images/four_tier_performance.png)
+
+					<small>
+						<cite>source: [WebKit Blog](https://www.webkit.org/blog/3362/introducing-the-webkit-ftl-jit/)</cite>
+					</small>
 
 					---
 
