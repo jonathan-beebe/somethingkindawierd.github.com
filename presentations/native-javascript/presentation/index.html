@@ -4,10 +4,10 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>reveal.js - The HTML Presentation Framework</title>
+	<title>Native Javascript with JavaScriptCore + Swift by Jon Beebe</title>
 
-	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-	<meta name="author" content="Hakim El Hattab">
+	<meta name="description" content="A discussion about JavaScriptCore & Swift">
+	<meta name="author" content="Jon Beebe (@bejonbee)">
 
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -42,6 +42,10 @@
 	}
 	.reveal code {
 		font-family: "Source Code Pro", Menlo, Monaco, Courier, monospace;
+	}
+	.reveal section img {
+		border: none;
+		box-shadow: none;
 	}
 	</style>
 	<!--[if lt IE 9]>
@@ -234,6 +238,12 @@
 
 					---
 
+					![Not so fast](images/sheep.gif)
+
+					<strong>Not so fast…</strong>
+
+					---
+
 					# OSR
 
 					Code flows through the compilation tiers through OSR: On Stack Replacement.
@@ -260,15 +270,39 @@
 
 					---
 
+					# The Tradeoff
+
+					OSR creates executable code in memory.
+
+					Only whitelisted processes can do this,<br>e.g. WKWebView & Safari.
+
+					---
+
+					# The Tradeoff
+
+					JSContext objects you create can only run interpreted js, the slowest of the four compilation tiers available.
+
+					---
+
+					# The Tradeoff
+
+					You can find this called out in<br>[Apple’s iOS Security Guide](https://www.apple.com/business/docs/iOS_Security_Guide.pdf) on page 18.
+
+					---
+
 					Let’s explore some real-world examples
 
 					---
 
-					Markdown Stickies
+					<p>[Mailcheck](https://github.com/mailcheck/mailcheck) in EveryDollar</p>
+
+					![Mailcheck in EveryDollar](images/everydollar_mailcheck.gif)
 
 					---
 
-					MailCheck
+					<p>Markdown Stickies</p>
+
+					![Markdown Stickies](images/markdown_stickies.png)
 
 					---
 
@@ -323,7 +357,7 @@
 
 					# Thank You
 
-					Slideshow viewable on [github](http://somethingkindawierd.com/presentations/native-javascript/presentation/index.html).
+					Slideshow viewable at [bit.ly/javascriptcore](http://bit.ly/javascriptcore).
 
 					Source & Xcode Swift playground freely available on [github](https://github.com/somethingkindawierd/somethingkindawierd.github.com/tree/master/presentations/native-javascript).
 

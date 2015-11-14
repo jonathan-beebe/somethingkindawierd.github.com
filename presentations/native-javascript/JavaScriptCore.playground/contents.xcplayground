@@ -39,11 +39,11 @@
         <page name='Sharing Native Classes 5'/>
         <page name='Sharing Native Classes 6'/>
         <page name='Real World Examples'/>
+        <page name='Running Mailcheck'/>
         <page name='Parsing Markdown'/>
         <page name='Parsing Markdown 2'/>
         <page name='Parsing Markdown Webview'/>
         <page name='Parsing Markdown WKWebView'/>
-        <page name='Running Mailcheck'/>
         <page name='Extending JSContext'/>
     </pages>
 </playground>
