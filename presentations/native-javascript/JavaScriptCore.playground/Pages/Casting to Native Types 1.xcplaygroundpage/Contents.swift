@@ -9,8 +9,9 @@ let value = context.evaluateScript(
     "[1,2,3,4,5].map(function(n){return n*n})"
 )
 
-value.className
+let nativeArray = value.toArray()
 
-//: `value` is not a native array…yet
+// Try typing `value.to` to see the autocomplete list that appears.
+// Experiment with different methods to see what happens.
 
 //: [Next](@next)

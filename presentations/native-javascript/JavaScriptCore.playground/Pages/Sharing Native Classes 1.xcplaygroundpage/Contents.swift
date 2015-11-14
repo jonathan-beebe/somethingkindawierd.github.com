@@ -4,12 +4,9 @@ import Foundation
 import JavaScriptCore
 
 let context = JSContext()
-let jsv = context.evaluateScript(
-    "obj = {x: 1, y: 8};"
-)
 
-jsv.className
+//: Export the class for use in javascript
 
-let dict = jsv.toDictionary()
+context.setObject(Point.self, forKeyedSubscript: "Point")
 
 //: [Next](@next)

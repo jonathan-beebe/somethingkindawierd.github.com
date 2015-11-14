@@ -1,11 +1,20 @@
 //: [Previous](@previous)
 
-//: # Casting to Native Types
-//:
-//: It is possible to cast a JSValue into any native type, even when it does not make sense.
-//:
-//: *therefore…*
-//: 
-//: Always *safely* guard `JSValue` casting
+import Foundation
+import JavaScriptCore
 
+let context = JSContext()
+
+let value = context.evaluateScript(
+    "[1,2,3,4,5].map(function(n){return n*n})"
+)
+
+if let nativeArray = value.toArray() as? [Int] {
+    print("success casting value")
+}
+else {
+    print("error casting value")
+}
+
+// Try modifying the input array to see how casting behaves
 //: [Next](@next)

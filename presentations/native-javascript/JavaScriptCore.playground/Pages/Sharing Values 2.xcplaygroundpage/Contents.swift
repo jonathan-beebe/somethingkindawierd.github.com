@@ -7,12 +7,13 @@ let context = JSContext()
 
 //: Inject native object into JavaScript context
 
-let array = [1,2,3,4,5]
-context.setObject(array, forKeyedSubscript: "array")
+let inputArray = [1,2,3,4,5]
+context.setObject(inputArray, forKeyedSubscript: "array")
 
-let jsv = context.evaluateScript(
-    "array.map(function(n){return n*n})"
-)
+//: Retrieve js value into Native context
+
+let outputArray = context.objectForKeyedSubscript("array")
+outputArray.className
 
 //: [Next](@next)
 

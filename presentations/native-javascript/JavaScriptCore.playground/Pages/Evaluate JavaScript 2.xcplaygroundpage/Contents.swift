@@ -9,8 +9,8 @@ let context = JSContext()
 
 //: 2. Evaluate a script
 
-let jsv = context.evaluateScript(
-    "1" // Returns the last value
-)
+context.evaluateScript("[1,2,3,4,5]")
+context.evaluateScript("nonsense * nonsense")
+context.evaluateScript("this")
 
 //: [Next](@next)

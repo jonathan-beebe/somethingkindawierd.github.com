@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='osx' display-mode='rendered'>
     <pages>
-        <page name='Welcome'/>
         <page name='Evaluating Javascript'/>
         <page name='Creating Context'/>
         <page name='Evaluate JavaScript 1'/>
         <page name='Evaluate JavaScript 2'/>
-        <page name='Evaluate JavaScript 3'/>
-        <page name='Evaluate JavaScript 4'/>
-        <page name='Evaluate JavaScript 5'/>
         <page name='Sharing Values'/>
         <page name='Sharing Values 1'/>
         <page name='Sharing Values 2'/>
         <page name='Sharing Values 3'/>
-        <page name='Sharing Values 4'/>
         <page name='Memory Management'/>
         <page name='Memory Management 1'/>
         <page name='Memory Management 2'/>
@@ -21,29 +16,13 @@
         <page name='Casting to Native Types 1'/>
         <page name='Casting to Native Types 2'/>
         <page name='Casting to Native Types 3'/>
-        <page name='Casting to Native Types 4'/>
-        <page name='Casting to Native Types 5'/>
-        <page name='Casting to Native Types 6'/>
-        <page name='Casting to Native Types 7'/>
-        <page name='Casting to Native Types 8'/>
-        <page name='Casting to Native Types 9'/>
         <page name='Casting Relationship'/>
-        <page name='Casting Relationship 1'/>
-        <page name='Casting Relationship 2'/>
-        <page name='Casting Relationship 4'/>
-        <page name='Casting Relationship 5'/>
         <page name='Sharing Native Classes'/>
+        <page name='Sharing Native Classes 1'/>
         <page name='Sharing Native Classes 2'/>
-        <page name='Sharing Native Classes 3'/>
-        <page name='Sharing Native Classes 4'/>
-        <page name='Sharing Native Classes 5'/>
-        <page name='Sharing Native Classes 6'/>
         <page name='Real World Examples'/>
         <page name='Running Mailcheck'/>
-        <page name='Parsing Markdown'/>
+        <page name='Parsing Markdown 1'/>
         <page name='Parsing Markdown 2'/>
-        <page name='Parsing Markdown Webview'/>
-        <page name='Parsing Markdown WKWebView'/>
-        <page name='Extending JSContext'/>
     </pages>
 </playground>
