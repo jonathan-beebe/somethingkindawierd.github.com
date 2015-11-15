@@ -2,9 +2,8 @@
 <playground version='6.0' target-platform='osx' display-mode='rendered'>
     <pages>
         <page name='Evaluating Javascript'/>
-        <page name='Creating Context'/>
-        <page name='Evaluate JavaScript 1'/>
-        <page name='Evaluate JavaScript 2'/>
+        <page name='Evaluating JavaScript 1'/>
+        <page name='Evaluating JavaScript 2'/>
         <page name='Sharing Values'/>
         <page name='Sharing Values 1'/>
         <page name='Sharing Values 2'/>

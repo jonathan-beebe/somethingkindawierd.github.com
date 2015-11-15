@@ -22,6 +22,7 @@ let pt:Point = context
 // Try modifying either pt object and se what happens to the other
 
 //context.evaluateScript("pt.x = 320; pt.y = 480; pt;")
+//pt
 
 //pt.x = 320
 //pt.y = 480

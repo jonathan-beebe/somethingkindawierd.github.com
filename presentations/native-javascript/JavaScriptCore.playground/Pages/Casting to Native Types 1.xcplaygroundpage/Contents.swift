@@ -13,5 +13,6 @@ let nativeArray = value.toArray()
 
 // Try typing `value.to` to see the autocomplete list that appears.
 // Experiment with different methods to see what happens.
+// Try casting to distinct type, e.g. `as! [Int]`
 
 //: [Next](@next)
