@@ -6,6 +6,8 @@ published: true
 draft: false
 ---
 
+# Profiling JavaScript in JavaScriptCore
+
 JavaScriptCore (JSC) is the powerful JavaScript engine underlying WebKit. It's [very fast](http://blog.llvm.org/2014/07/ftl-webkits-llvm-based-jit.html) primarily because of the four-tier compiler at its heart. In this article I will explain how I peeked under the hood at how this works.
 
 JavaScriptCore does not directly execute the JavaScript text it is provided. A script is parsed into bytecode and thrown away. It is from the bytecode representation that all the magic happens.
@@ -168,7 +170,7 @@ OSR stands for On Stack Replacement. This means that JavaScriptCore can swap out
 
 This diagram captures the flow of code in JavaScriptCore. Code can make it into the DFG execution phase and fall back to the Baseline execution. This ability to bail out is necessary when providing fast, compiled versions of JavaScript, due to the language’s dynamic nature. As long as the DFG version receives the expected argument types it will execute. Otherwise it must fall back to the slower code that can accept dynamic types.
 
-```
+<pre>
                                                ┌───────┐      
                                                │Compile│      
                                              ┌▶│  to   │─┐    
@@ -180,7 +182,7 @@ This diagram captures the flow of code in JavaScriptCore. Code can make it into 
 │    to    │─▶│ LLInt │─▶│    to    │─▶│ Baseline │  │  DFG  │
 │ bytecode │  │       │  │ Baseline │  │          │  │       │
 └──────────┘  └───────┘  └──────────┘  └──────────┘◀─└───────┘
-```
+</pre>
 
 ## FTL JIT
 
@@ -237,7 +239,7 @@ In the tenth entry within the `compilations` array I finally found an example of
 }
 ```
 
-Inside the description there was the hint “Generated FTL JIT code for constructor…” so I could identify which piece of the JavaScript code was expensive enough to warrant the FTL. 
+Inside the description there was the hint “Generated FTL JIT code for constructor…” so I could identify which piece of the JavaScript code was expensive enough to warrant the FTL.
 
 It was about this time in my exploration of JavaScriptCore that I discovered a far more efficient way to examine a profile.
 

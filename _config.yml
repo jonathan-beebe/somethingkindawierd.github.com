@@ -1,34 +1,28 @@
-name: SomethingKindaWierd.com
-description: An iOS Developer for Ramsey Solutions
-meta_description: "Jon Beebe’s personal site"
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-aboutPage: true
-
-markdown: redcarpet
-highlighter: pygments
-
-redcarpet:
-  extensions:
-    - footnotes
-    - strikethrough
-    - smart
-    - tables
-    - no_intra_emphasis
-    - autolink
-    - superscript
-    - with_toc_data
-
-paginate: 20
-baseurl: /
+# Site settings
+title: somethingkindawierd.com
+email: somethingkindawierd@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  An iOS developer for Ramsey Solutions
+baseurl: ""
 domain_name: 'http://somethingkindawierd.com'
+url: "http://somethingkindawierd.com"
+twitter_username: bejonbee
+github_username:  somethingkindawierd
 google_analytics: 'UA-4889093-2'
+permalink:       /:year/:month/:title.html
 
-# Details for the RSS feed generator
-url:            'http://somethingkindawierd.com'
-author:         'Jon Beebe'
-authorTwitter:  'bejonbee'
-
-permalink:       /:year/:month/:title/
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
 
 defaults:
     -

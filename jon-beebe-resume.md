@@ -1,11 +1,12 @@
 ---
-title:  "Jon Beebe’s Résumé"
+title:  "Résumé"
 date:   2015-07-10 10:18:00
 description: Jon Beebe’s Résumé
+permalink: jon-beebes-resume.html
 ---
 
 # Jonathan Beebe
-	
+
 ### My Vision
 
 To experience the abundant life God intended; exceed my wife’s expectations daily; and make a living building open source software.

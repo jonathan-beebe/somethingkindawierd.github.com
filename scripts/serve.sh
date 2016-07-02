@@ -1,2 +1,2 @@
 #!/bin/bash
-jekyll serve --no-watch
+bundle exec jekyll serve --no-watch

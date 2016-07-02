@@ -1,5 +1,6 @@
 ---
-title: About Jon Beebe
+title: About
+description: About Jon Beebe
 permalink: about/
 profile: true
 summary: My best attempt to summarize what keeps me ticking.

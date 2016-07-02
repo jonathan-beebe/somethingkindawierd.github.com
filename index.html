@@ -1,6 +1,7 @@
 ---
-profile: true
+layout: default
 ---
-
-{% include post-list.html %}
-{% include footer.html %}
+<div class="home">
+  {% assign post = site.posts[0] %}
+  {% include _post.html post=post %}
+</div>

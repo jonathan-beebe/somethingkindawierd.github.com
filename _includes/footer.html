@@ -1,20 +1,23 @@
-<footer id="footer">
-    <p class="small">
-    <a href="http://www.beebeography.com/" title="photography">
-      <i class="fa fa-camera"></i>
-    </a>
-    <a href="https://github.com/somethingkindawierd" title="github">
-      <i class="fa fa-github-alt"></i> 
-    </a>
-    <a href="http://stackoverflow.com/users/123781/bejonbee" title="Stack Overflow">
-      <i class="fa fa-stack-overflow"></i>
-    </a>
-    <a class="cta" href="{{ site.baseurl }}feed.xml">
-      <i class="fa fa-rss"></i>
-    </a>
-    <a href="https://twitter.com/{{ site.authorTwitter }}" title="Jon Beebe on Twitter">
-      <i class="fa bb-twitter"> @{{ site.authorTwitter }}</i>
-    </a>
-  </p>
-  <p class="small">© Copyright {{ site.time | date: '%Y' }} {{ site.author }}</p>
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title }}</h2>
+
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+
+  </div>
+
 </footer>
