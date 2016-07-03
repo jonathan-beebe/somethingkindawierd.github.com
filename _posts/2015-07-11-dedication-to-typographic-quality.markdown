@@ -4,8 +4,6 @@ date:   2015-07-10 10:18:00
 description: A story of ceding quality to no one
 ---
 
-![The Art of Computer Programming]({{ site.url }}/assets/images/posts/taocp/taocp.jpg) 
-
 Many know Donald Knuth as the author of *The Art of Computer Programming*, or TAOCP, an epic four volume set. However fewer are aware the steadfast devotion he applied to perfecting the typography of his books. Consider this story as he was about to publish the second edition of Volume 2.
 
 > The TAOCP project progressed smoothly for three volumes—published in 1968, 1969, and 1973—but advancements in the subject matter soon overtook the writing. When, in 1978, a second edition of Volume 2 was required, the Monotype was unfortunately dying out, replaced by newfangled “photocomposition.”

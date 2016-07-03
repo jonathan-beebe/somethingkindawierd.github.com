@@ -36,5 +36,3 @@ The following is my best attempt at summarizing it all.
 > were toiling upward in the night.
 
 &mdash; Henry Wadsworth Longfellow
-
-{% include footer.html %}

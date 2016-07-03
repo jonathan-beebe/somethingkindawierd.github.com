@@ -6,8 +6,6 @@ published: true
 draft: false
 ---
 
-# Profiling JavaScript in JavaScriptCore
-
 JavaScriptCore (JSC) is the powerful JavaScript engine underlying WebKit. It's [very fast](http://blog.llvm.org/2014/07/ftl-webkits-llvm-based-jit.html) primarily because of the four-tier compiler at its heart. In this article I will explain how I peeked under the hood at how this works.
 
 JavaScriptCore does not directly execute the JavaScript text it is provided. A script is parsed into bytecode and thrown away. It is from the bytecode representation that all the magic happens.

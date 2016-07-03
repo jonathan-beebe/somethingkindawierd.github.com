@@ -104,6 +104,6 @@ BS in Industrial Technologies, California Polytechnic State University
 
 Studied Art History and Fine Arts at Parson art school in Paris, France
 
-###Strengths
+### Strengths
 
 Highly creative, self-motivated and self-managed. Embrace team-environments. Talent for diagnosing problems and crafting solutions. Very organized, manifesting itself in well-commented, easy to follow code. Good communication skills, especially when communicating complex, technical subjects to non-technical people. Passion for open-source.

@@ -6,8 +6,6 @@ published: true
 draft: false
 ---
 
-# JavaScriptCore REPL
-
 Apple seems to have a complicated relationship with JavaScript. It is the first non-Apple language officially supported for developing native apps [^1] (both OS X & iOS) and is a first-class scripting language sitting besides AppleScript [^2]. However it seems to have crept in slowly, silently, and remains a rather under-documented and under-utilized technology.
 
 That’s not to say there aren’t people doing amazing things with it. It just seems that most JavaScript devs use Node, and most native devs, if they use JavaScript, don’t give it the same prominence as the native languages.

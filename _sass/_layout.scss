@@ -2,6 +2,7 @@
  * Site header
  */
 .site-header {
+    font-family: "Century Gothic";
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -97,6 +98,7 @@
  * Site footer
  */
 .site-footer {
+    font-family: "Century Gothic";
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
@@ -203,8 +205,8 @@
 }
 
 .post-title {
+    letter-spacing: normal;
     font-size: 42px;
-    letter-spacing: -1px;
     line-height: 1;
 
     @include media-query($on-laptop) {
@@ -237,5 +239,10 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+
+    hr {
+        border-top: 0;
+        margin: 1em 0 1em 0;
     }
 }
