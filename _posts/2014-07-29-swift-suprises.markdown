@@ -2,6 +2,7 @@
 title:  "Swift Suprises"
 date:   2014-07-29 10:18:00
 description: After spending a weekend playing with Swift I encountered a few surprises.
+tags: swift development
 published: true
 ---
 

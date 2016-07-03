@@ -3,7 +3,7 @@ title:  "JavaScriptCore in Swift"
 date:   2015-09-28 19:30:00
 description: Leverage JavaScript within your native Swift apps.
 published: true
-draft: false
+tags: javascript
 ---
 
 ## Intro to JavaScriptCore

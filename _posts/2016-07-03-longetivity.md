@@ -2,12 +2,12 @@
 title: "Longetivity"
 date:   2016-07-02 11:00:00
 published: true
-draft: false
+tags: thoughts
 ---
 
 > Research indicates that the number one factor in longevity is not social relationships or happiness, but consciousnesses, described as persistence, dependability, and organization.
 
-That quote comes from _The Entitlement Cure_ on page 66. This caught my attention, so I dug a bit deeper. The original source for that statement comes from _ The Longevity Project_, which lays out the findings from a lifelong study of 1,500 people.
+That quote comes from [_The Entitlement Cure_](http://www.cloudtownsend.com/the-entitlement-cure/) on page 66. This caught my attention, so I dug a bit deeper. The original source for that statement comes from [_The Longevity Project_](http://www.howardsfriedman.com/longevityproject/), which lays out the findings from a lifelong study of 1,500 people.
 
 That is 1,500 people studied from birth to death. Amazing.
 

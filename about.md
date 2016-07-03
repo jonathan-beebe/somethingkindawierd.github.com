@@ -3,6 +3,7 @@ title: About
 description: About Jon Beebe
 permalink: about/
 profile: true
+main_menu: true
 summary: My best attempt to summarize what keeps me ticking.
 ---
 

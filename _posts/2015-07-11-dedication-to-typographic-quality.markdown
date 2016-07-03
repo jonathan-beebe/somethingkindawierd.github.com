@@ -2,6 +2,7 @@
 title:  "Dedication to Typographic Quality"
 date:   2015-07-10 10:18:00
 description: A story of ceding quality to no one
+tags: typography craftsmanship
 ---
 
 Many know Donald Knuth as the author of *The Art of Computer Programming*, or TAOCP, an epic four volume set. However fewer are aware the steadfast devotion he applied to perfecting the typography of his books. Consider this story as he was about to publish the second edition of Volume 2.

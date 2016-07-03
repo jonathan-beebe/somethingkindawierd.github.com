@@ -3,7 +3,7 @@ title:  "JavaScriptCore REPL"
 date:   2015-09-07 09:07:00
 description: Try out Apple’s built-in JavaScriptCore REPL in OS X
 published: true
-draft: false
+tags: javascript
 ---
 
 Apple seems to have a complicated relationship with JavaScript. It is the first non-Apple language officially supported for developing native apps [^1] (both OS X & iOS) and is a first-class scripting language sitting besides AppleScript [^2]. However it seems to have crept in slowly, silently, and remains a rather under-documented and under-utilized technology.

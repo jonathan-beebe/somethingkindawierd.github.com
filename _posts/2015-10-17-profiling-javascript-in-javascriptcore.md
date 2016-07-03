@@ -3,7 +3,7 @@ title:  "Profiling JavaScript in JavaScriptCore"
 date:   2015-10-17 11:00:00
 description: Peek under-the-hood of JavaScriptCore and learn how it optimizes JavaScript
 published: true
-draft: false
+tags: javascript
 ---
 
 JavaScriptCore (JSC) is the powerful JavaScript engine underlying WebKit. It's [very fast](http://blog.llvm.org/2014/07/ftl-webkits-llvm-based-jit.html) primarily because of the four-tier compiler at its heart. In this article I will explain how I peeked under the hood at how this works.

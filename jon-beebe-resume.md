@@ -2,6 +2,7 @@
 title:  "Résumé"
 date:   2015-07-10 10:18:00
 description: Jon Beebe’s Résumé
+main_menu: false
 permalink: jon-beebes-resume.html
 ---
 
