@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-    font-family: "Century Gothic";
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -182,6 +182,11 @@
 
     > li {
         margin-bottom: $spacing-unit;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Futura", "Trebuchet MS", HelveticaNeue, Helvetica, Arial, sans-serif;
+      font-weight: normal;
     }
 }
 
