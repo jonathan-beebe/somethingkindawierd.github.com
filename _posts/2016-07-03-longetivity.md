@@ -11,6 +11,6 @@ That quote comes from [_The Entitlement Cure_](http://www.cloudtownsend.com/the-
 
 That is 1,500 people studied from birth to death. Amazing.
 
-The findings are worded another way in a summary of the book:
+The findings are worded another way in a [summary of the book](http://www.publishersweekly.com/978-1-59463-075-0):
 
 > If there's a secret to old age, the authors find, it’s living conscientiously and bringing forethought, planning, and perseverance to one's professional and personal life.
