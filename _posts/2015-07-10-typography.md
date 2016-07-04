@@ -2,7 +2,7 @@
 title:  "Typography"
 date:   2015-07-10 10:18:00
 description: Typography
-draft: true
+published: false
 ---
 
 # Heading One
