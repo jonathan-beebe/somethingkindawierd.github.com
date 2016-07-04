@@ -1,3 +1,16 @@
+@mixin font-feature($features...) {
+  $font-feature-settings: "liga", "dlig", "onum";
+
+  @if length($features) > 0 {
+    $font-feature-settings: $features;
+  }
+
+  -webkit-font-feature-settings: $font-feature-settings;
+  -moz-font-feature-settings: $font-feature-settings;
+  -ms-font-feature-settings: $font-feature-settings;
+  font-feature-settings: $font-feature-settings;
+}
+
 /**
  * Reset some basic elements
  */
@@ -14,18 +27,22 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $body-font-family;
     color: $text-color;
     background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
+    // -webkit-text-size-adjust: 100%;
+    // -webkit-font-feature-settings: "kern" 1;
+    // -moz-font-feature-settings: "kern" 1;
+    // -o-font-feature-settings: "kern" 1;
+    // font-feature-settings: "kern" 1;
+    // font-kerning: auto;
+    @include font-feature("onum");
 }
 
-
+sup,
+.footnotes {
+    @include font-feature("lnum");
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -82,7 +99,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Futura-CondensedExtraBold", "Futura", "HelveticaNeue-CondensedBlack", Helvetica, Arial, sans-serif;
+    font-family: $heading-font-family;
     font-weight: bold;
 }
 
@@ -123,15 +140,14 @@ blockquote {
 }
 
 
-$code-background: #f8f8f8;
 
 /**
  * Code formatting
  */
 pre,
 code {
-    font-family: Hack, SourceCodePro, Menlo, monospace;
-    font-size: 0.8rem;
+    font-family: $monospace-font-family;
+    font-size: $monospace-font-size;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: $code-background;

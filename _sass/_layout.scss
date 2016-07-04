@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-family: $brand-font-family;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -98,7 +98,7 @@
  * Site footer
  */
 .site-footer {
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-family: $brand-font-family;
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
@@ -185,7 +185,7 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-      font-family: "Futura", "Trebuchet MS", HelveticaNeue, Helvetica, Arial, sans-serif;
+      font-family: $heading-font-family-light;
       font-weight: normal;
     }
 }

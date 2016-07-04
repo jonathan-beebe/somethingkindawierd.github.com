@@ -4,12 +4,17 @@
 @charset "utf-8";
 
 
+$brand-font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+$body-font-family: "HoeflerText-Regular", "Hoefler Text", Baskerville, "Baskerville Old Face", serif;
+$heading-font-family: "Futura-CondensedExtraBold", "Futura", "HelveticaNeue-CondensedBlack", Helvetica, Arial, sans-serif;
+$heading-font-family-light: "Futura", "Trebuchet MS", HelveticaNeue, Helvetica, Arial, sans-serif;
+$monospace-font-family: Hack, SourceCodePro, Menlo, monospace;
 
 // Our variables
-$base-font-family: Garamond, "Hoefler Text", Baskerville, "Baskerville Old Face", serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
+$monospace-font-size:  $base-font-size * 0.8;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
@@ -21,6 +26,8 @@ $brand-color:      #2a7ae2;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
+
+$code-background: #f8f8f8;
 
 // Width of the content area
 $content-width:    800px;

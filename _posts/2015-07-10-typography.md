@@ -2,7 +2,6 @@
 title:  "Typography"
 date:   2015-07-10 10:18:00
 description: Typography
-published: false
 ---
 
 # Heading One
@@ -36,6 +35,16 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
+
+## Ligatures?
+
+- finally
+- ss
+- ct
+- st
+- 1,500
+- 1234567890
+- <sup>1234567890</sup>
 
 Anyways, this is a pretty good start, I think.
 
