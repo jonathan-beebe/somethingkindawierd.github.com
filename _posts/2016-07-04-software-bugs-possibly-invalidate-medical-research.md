@@ -10,7 +10,7 @@ date: 2016-07-04 16:14:00
 > 
 > That’s not a gentle nudge that some results might be overstated: it’s more like making a bonfire of thousands of scientific papers
 
-No kidding. That is a huge problem. But perhaps even more interesting was this comment at the end.
+No kidding. That is a huge problem. The [paper cited in that article](http://m.pnas.org/content/early/2016/06/27/1602413113.full) says they expected only 5% false-positive results. But perhaps even more interesting was this comment at the end.
 
 > they swipe the fMRI community for their “lamentable archiving and data-sharing practices” that prevent most of the discipline's body of work being re-analysed.
 
