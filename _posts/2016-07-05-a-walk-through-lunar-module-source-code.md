@@ -17,6 +17,9 @@ Imagine if we all had to _carry_ our source code to work each day.
 
 > Don asked if I wanted to carry the code back to his car. He was joking, but I took him up on the chance to handle artifact that will be sealed behind glass and displayed at a museum sooner or later. The source code was very heavy, I had to switch arms about three times over a journey of only two city blocks.
 
-Check out the source at [hackaday.com][1] for images and a video. 
+Check out the source at [hackaday.com][1] for images, a video, and some great links. 
+
+You can read more on [_Tales from the Lunar Module Guidance Computer_ directly from Don’s page][2]
 
 [1]: http://hackaday.com/2016/07/05/don-eyles-walks-us-through-the-lunar-module-source-code/
+[2]: http://www.doneyles.com/LM/Tales.html
