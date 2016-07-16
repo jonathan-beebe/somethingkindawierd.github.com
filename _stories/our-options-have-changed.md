@@ -21,7 +21,7 @@ The automated voice droned on, looping and repeating itself. He looked all over 
 
 “…debit cards press three. For all…”
 
-_Aaahh! _ Endless looping nonsense. Paths to nowhere. Infinite voids! Desperation began to engulf him. He steadied himself and tried to clear his mind. He closed his eyes, only to realize he had not been looking at anything. He—had no eyes?
+_Aaahh!_ Endless looping nonsense. Paths to nowhere. Infinite voids! Desperation began to engulf him. He steadied himself and tried to clear his mind. He closed his eyes, only to realize he had not been looking at anything. He—had no eyes?
 
 Why didn’t anything make sense!?
 
