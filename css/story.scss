@@ -1,0 +1,106 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+$body-font-family: "HoeflerText-Regular", "Hoefler Text", Baskerville, "Baskerville Old Face", serif;
+$heading-font-family: "Futura-CondensedExtraBold", "Futura", "HelveticaNeue-CondensedBlack", Helvetica, Arial, sans-serif;
+$base-font-size:   18px;
+$base-font-weight: 400;
+$base-line-height: 1.5;
+$spacing-unit: 1.5rem;
+
+$text-color: #333;
+$background-color: #eee;
+
+// Width of the content area
+$content-width: 40rem;
+$on-palm: 30rem;
+$on-laptop: 40rem;
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  font-weight: bold;
+}
+
+html, body {
+  color: $text-color;
+  background: $background-color;
+}
+
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $body-font-family;
+
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: $spacing-unit * 2;
+  margin-bottom: $spacing-unit * 2;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
+
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+}
+
+footer {
+  font: $base-font-weight #{$base-font-size * 0.8}/#{$base-line-height} $body-font-family;
+  color: lighten($text-color, 12%);
+  border-top: 1px solid lighten($text-color, 60%);
+  margin: $spacing-unit * 2 0 $spacing-unit * 2 0;
+  padding: $spacing-unit * 2 0 $spacing-unit * 2 0;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  i {
+    font-weight: light;
+    font-style: normal;
+    color: lighten($text-color, 25%);
+  }
+}
