@@ -48,3 +48,4 @@ defaults:
 collections:
   stories:
     output: true
+    permalink: /stories/:title.html
