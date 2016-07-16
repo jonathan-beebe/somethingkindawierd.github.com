@@ -19,10 +19,12 @@
 
   <footer>
     <p>
-      <span>Published <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></span>
+      <span>Copyright &copy; <span itemprop="copyrightYear">{{ page.date | date: "%Y"}}</span></span>
       {% if page.author %} • <span itemprop="author">{{ page.author }}</span>{% endif %}
-      • <span>Copyright &copy; <span itemprop="copyrightYear">{{ page.date | date: "%Y"}}</span></span>
-      • <span>{{ content | number_of_words }} words</span>
+      <br>
+      <span>Published <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></span>
+      <br>
+      <span>{{ content | number_of_words }} words</span>
     </p>
   </footer>
   {% include analytics.html %}

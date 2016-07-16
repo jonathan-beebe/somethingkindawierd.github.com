@@ -92,6 +92,8 @@ footer {
   border-top: 1px solid lighten($text-color, 60%);
   margin: $spacing-unit * 2 0 $spacing-unit * 2 0;
   padding: $spacing-unit * 2 0 $spacing-unit * 2 0;
+  text-align: center;
+  position: relative;
 
   p {
     margin: 0;
