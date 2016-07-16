@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ "/css/story.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>
+
+<body itemscope itemtype="http://schema.org/CreativeWork">
+  <h1 itemprop "name" class="post-title">{{ page.title }}</h1>
+  {{ content }}
+
+  <footer>
+    <p>
+      <span>Published <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></span>
+      {% if page.author %} • <span itemprop="author">{{ page.author }}</span>{% endif %}
+      • <span>Copyright &copy; <span itemprop="copyrightYear">{{ page.date | date: "%Y"}}</span></span>
+      • <span>{{ content | number_of_words }} words</span>
+    </p>
+  </footer>
+  {% include analytics.html %}
+</body>
+
+</html>

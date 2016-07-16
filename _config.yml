@@ -37,6 +37,15 @@ defaults:
             type: posts
         values:
             layout: post
+    -
+        scope:
+            path: "" # empty string for all files
+            type: stories
+        values:
+            layout: story
+            author: Jonathan Beebe
 
 collections:
-- stories
+  stories:
+    output: true
+    permalink: /stories/:title.html
