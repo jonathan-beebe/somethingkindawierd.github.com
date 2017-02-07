@@ -1,7 +1,6 @@
 ---
 date: 2017-02-07 14:27
 title: Sick Day Playlist
-tags: 
 published: true
 ---
 
