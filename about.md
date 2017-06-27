@@ -5,6 +5,7 @@ permalink: about/
 profile: true
 main_menu: true
 summary: My best attempt to summarize what keeps me ticking.
+redirect_from: "/about-jon-beebe.html"
 ---
 
 This site is my digital résumé & portfolio; you can learn what I do for a living,

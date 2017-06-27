@@ -5,6 +5,9 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+gems:
+  - jekyll-redirect-from
+
 # Site settings
 title: somethingkindawierd.com
 email: somethingkindawierd@gmail.com
@@ -17,6 +20,8 @@ twitter_username: bejonbee
 github_username:  somethingkindawierd
 google_analytics: 'UA-4889093-2'
 permalink:       /:year/:month/:title.html
+timezone: America/Chicago
+future: false
 
 # Build settings
 markdown: kramdown
