@@ -1,5 +1,5 @@
 ---
-date: 2017-06-30
+date: 2017-07-01
 title: To Pixar and Beyond
 tags:
 published: true
