@@ -1,5 +1,5 @@
 ---
-date: 2017-07-05
+date: 2017-07-09
 title: Creative Freedom
 tags:
 published: true
