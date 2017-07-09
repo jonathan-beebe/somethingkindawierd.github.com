@@ -16,7 +16,6 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: ""
 domain_name: 'http://somethingkindawierd.com'
 url: "http://somethingkindawierd.com"
-twitter_username: bejonbee
 github_username:  somethingkindawierd
 google_analytics: 'UA-4889093-2'
 permalink:       /:year/:month/:title.html
