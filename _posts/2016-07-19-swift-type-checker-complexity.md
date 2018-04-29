@@ -2,16 +2,17 @@
 title: Exponential time complexity in the Swift type checker
 date: 2016-07-19
 tags: swift
+published: true
 ---
 
 Matt Gallagher has created an incredible article on Cocoa with Love about a [Swift compiler issue](http://www.cocoawithlove.com/blog/2016/07/12/type-checker-issues.html).
 
 > Try compiling the following line:
-> 
+>
 > ```swift
 > let x = { String("\($0)" + "") + String("\($0)" + "") }(0)
 > ```
-> 
+>
 > This single line does compile without error but it takes around 4 seconds to compile in Swift 2.3 and a whopping 15 seconds to compile in Swift 3 on my computer. The compiler spends almost all of this time in the Swift type checker.
 
 When I tried the above line in the newest Xcode 8 Beta 3 it took a _long_ time to finally fail with this message:
@@ -23,13 +24,13 @@ Playground execution failed: error: Temp Playground.playground:1:9: error: expre
 The specific problem as identified by Matt in his article:
 
 > In general, Swift’s complexity problem won’t be an issue unless you’re using two or more of the following features in a single expression:
-> 
+>
 > - overloaded functions (including operators)
 > - literals
 > - closures without explicit types
 > - expressions where Swift’s default “every integer literal is an Int and every float literal is a Double” choice is wrong
 >
-> If you don’t typically combine these features in your code, then you’re unlikely to see the “expression was too complex” error. 
+> If you don’t typically combine these features in your code, then you’re unlikely to see the “expression was too complex” error.
 
 Matt’s post is incredibly thorough and full of details. You should check it out if you write Swift.
 

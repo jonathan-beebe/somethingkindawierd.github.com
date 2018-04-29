@@ -2,6 +2,7 @@
 title: "Leader Leader"
 tag: leadership book
 date: 2016-07-13 12:10:53
+published: true
 ---
 
 David Marquet tells an interesting story in _Turn the Ship Around_ about his submarine, the _Santa Fe_, picking up a SEAL team. He writes on page 198:

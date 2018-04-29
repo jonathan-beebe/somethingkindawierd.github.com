@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Drafts</h1>
+
+	{% for post in site.wip %}
+		<ul>
+			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		</ul>
+	{% endfor %}
+
+</div>

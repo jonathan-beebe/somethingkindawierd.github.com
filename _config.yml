@@ -45,6 +45,12 @@ defaults:
     -
         scope:
             path: "" # empty string for all files
+            type: wip
+        values:
+            layout: post
+    -
+        scope:
+            path: "" # empty string for all files
             type: stories
         values:
             layout: story
@@ -54,3 +60,6 @@ collections:
   stories:
     output: true
     permalink: /stories/:title.html
+  wip:
+    output: true
+    permalink: /__wip__/:title.html

@@ -3,17 +3,18 @@ title:  "Dedication to Typographic Quality"
 date:   2015-07-10 10:18:00
 description: A story of ceding quality to no one
 tags: typography craftsmanship
+published: true
 ---
 
 Many know Donald Knuth as the author of *The Art of Computer Programming*, or TAOCP, an epic four volume set. However fewer are aware the steadfast devotion he applied to perfecting the typography of his books. Consider this story as he was about to publish the second edition of Volume 2.
 
 > The TAOCP project progressed smoothly for three volumes—published in 1968, 1969, and 1973—but advancements in the subject matter soon overtook the writing. When, in 1978, a second edition of Volume 2 was required, the Monotype was unfortunately dying out, replaced by newfangled “photocomposition.”
 >
-> Dr. Knuth looked at his photo-typeset proofs in horror. Gone were the elegant text and math displays that exemplified a fine technical publication. In their place were pages full of words and symbols that, except for the use of typographic fonts, may as well have been prepared on a typewriter. This is not how Dr. Knuth felt his work should be presented to the world. 
+> Dr. Knuth looked at his photo-typeset proofs in horror. Gone were the elegant text and math displays that exemplified a fine technical publication. In their place were pages full of words and symbols that, except for the use of typographic fonts, may as well have been prepared on a typewriter. This is not how Dr. Knuth felt his work should be presented to the world.
 
 Like most of us who know how to write code, he decided to do something about it. The story continues in a highly relatable fashion.
 
-> He decided to take a break from writing and devise a method of harnessing zeros and ones to replicate the quality he knew possible from his experience with Monotype composition. Dr. Knuth guessed it might take six months, or at the outside, a year. 
+> He decided to take a break from writing and devise a method of harnessing zeros and ones to replicate the quality he knew possible from his experience with Monotype composition. Dr. Knuth guessed it might take six months, or at the outside, a year.
 >
 > In the end, it took about ten years to create TeX (the composition software), Metafont (a program for creating fonts for use with TeX), and a collection of the fonts he needed to produce TAOCP, as well as a new approach to writing computer code—“literate programming.” [^1]
 
@@ -25,7 +26,7 @@ Knuth certainly has an eye for detail.
 
 # Digital Editions
 
-Just like Knuth held out printing his book, he has also held out on releasing an electronic edition for similar reasons. 
+Just like Knuth held out printing his book, he has also held out on releasing an electronic edition for similar reasons.
 
 It’s been 22 years since the PDF format was introduced. Seven years have passed since the first Kindle was introduced. And still most electronic books have yet to catch up to, let alone exceed, the typographic beauty and utility that marked pre-computer typographic craftsmanship.
 
