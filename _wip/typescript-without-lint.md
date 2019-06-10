@@ -9,7 +9,7 @@ I’ve learned to love compilers as a guide. In the ever-changing world of techn
 
 When I first tried TypeScript it was like trudging through knee-high mud. I am fairly proficient in JavaScript. I use Swift daily. I’m getting aquainted with Kotlin. So picking up TypeScript should feel natural. But it wasn’t. I began to feel something was wrong. Maybe something was wrong with me.
 
-My more familiar tools, e.g. Xcode + Swift, or Kotlin + Android Studio, offer real time feedback on my code’s fitness. If I misspell something then the editor immediately underlines it. If I misformat some syntax, or forget a property, or whatever, the toolchain guides me towards the solution. Swift is particularly good at this.
+My more familiar tools, e.g. Xcode + Swift, or Kotlin + Android Studio, offer real time feedback on my code’s fitness. If I misspell something then the editor immediately underlines it. If I misformat some syntax, or forget a property, or whatever, the toolchain guides me towards the solution.
 
 _The compiler is a learning tool!_
 
