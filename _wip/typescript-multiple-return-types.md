@@ -2,7 +2,11 @@
 title: Multiple Return Types in TypeScript
 ---
 
-I found myself wanting to describe the authorization status of a user in my app. In TypeScript I had:
+In this article I want to explore a situation where I need multiple return types from a single function. (I don’t much care to argue whether this is a _good_ idea or not. It’s probably not. But I am constrained by a third party library I am trying to wrap, hence the reason I am bothering to explore this pattern.)
+
+I want a function `authorizerWithToken` that takes in a token string and returns the user’s auth status. And, if the user is authorized, I want the user object as well.
+
+The various states that this function can return are described in this enum.
 
 ```ts
 export enum AuthStatus {
@@ -13,13 +17,9 @@ export enum AuthStatus {
 }
 ```
 
-In the case of successful authorization where the return value of a function might be `AuthStatus.Authorized` I want to also return the associated value, the user object, that was authorized.
+If I was in my more comfortable world of iOS apps & Swift I might describe it like this.
 
-In Swift I can say something like this:
-
-```ts
-class User {...}
-
+```swift
 enum AuthStatus {
   case MissingToken
   case InvalidToken
@@ -28,12 +28,7 @@ enum AuthStatus {
 }
 ```
 
-Another way of saying what I want to do is: I want a function capable of returning _both_ the auth state & the authorized user if one exists. At first that felt like I was mixing two concerns together. Here is why I want this behavior:
-
-1. The user is only ever generated when auth is successful. That is the only state where it makes sense to have a value.
-2. The third party library I am using to perform authorization verifies the auth token an returns a user. So I would be using the same function to calculate the state and to access the user value. Breaking those two parts into separate functions makes little sense in this context.
-
-In TypeScript I found a few ways to represent two return types.
+In Swift the `User` type on `Authorized` is called an _associated value_. It guarentees the `.Authorized` case has the user object associated with it. Since TypeScript does not have associated values with enums, how can I accomplish the same thing? I came up with three ideas to effectively return two values from one function.
 
 - A union return type.
 - A tuple.
@@ -41,13 +36,45 @@ In TypeScript I found a few ways to represent two return types.
 
 ## Union Return Type
 
-A function that can return either an `AuthStatus` value or the authorized user.
+The union return type is a way of describing a function that can return a type of _either_ `AuthStatus` _or_ `User`. We can describe that in TypeScript using `AuthStatus | User`. Technically this is not returning two values. Instead it can return two types of values, depending on which is appropriate. So in the case of an authorized user we would not bother with the `AuthStatus.Authorized` value. We would instead return the actual user object. It might look something like this.
 
 ```ts
 function authorizeWithToken(token: string): AuthStatus | User {...}
 ```
 
 ## Tuple
+
+A _tuple_ is a way of describing a data structure with a guaranteed number and sequence of elements. You can read more about [TypeScript tuples in the handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html). Our return type might look like this, where we put the auth status first and the  user second.
+
+```ts
+type UserAuthState: [AuthStatus, User]
+```
+
+So our function would look something like this.
+
+```ts
+// Failed auth case
+function authorizeWithToken(token: string): UserAuthState {
+  // auth failed here...
+  return [AuthStatus.Unauthorized, undefined]
+}
+```
+
+```ts
+// Authorized Case
+function authorizeWithToken(token: string): UserAuthState {
+  // Perform successful authorization here...
+  return [AuthStatus.Authorized, user]
+}
+```
+
+## Composite Object
+
+I’m sure there are more than two ways of doing this. But I explored two ways of composing an object that descibes the data I need returned from my function. The first involves a custom type that wraps the actual value(s). The second approach uses a custom class.
+
+### Boxing Interface
+
+..., declares my intent to return the user value on success _or_ the error case
 
 A single value encapsulating both the status and the user object.
 
@@ -58,18 +85,25 @@ interface ValueOrError<V, E> extends Object { value?: V; error?: E; }
 Which can be used like this for an unauthorized user:
 
 ```ts
-return ValueOrError<User, AuthStatus> = { error: AuthStatus.Unauthorized }
-```
+// Failed auth case
+function authorizeWithToken(token: string): ValueOrError<User, AuthStatus> {
+  // auth failed here...
+  return ValueOrError<User, AuthStatus> = { error: AuthStatus.Unauthorized }
+}
 
 And for an authorized user:
 
 ```ts
-return ValueOrError<User, AuthStatus> = { value: myAuthorizedUserObject }
+// Authorized Case
+function authorizeWithToken(token: string): ValueOrError<User, AuthStatus> {
+  // Perform successful authorization here...
+  return ValueOrError<User, AuthStatus> = { value: user }
+}
 ```
 
 So in this case we either have an `error` value describing why the `value` is missing. Or we have no `error` and a well defined `value` property.
 
-## Composite Object
+### Custom Class
 
 This is a more formal version of the tuple.
 
@@ -95,7 +129,7 @@ export enum AuthStatus {
   Authorized
 }
 
-function(token?: string): Promise<User> {
+function authorizerWithToken(token?: string): Promise<User> {
   return new Promise<User>(async (resolve, reject) => {
     if(token == undefined) {
       reject(AuthStatus.MissingToken)
